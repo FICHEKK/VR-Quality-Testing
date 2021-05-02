@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/BNG Framework/Resources/RingHelper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BNG Framework/Resources/RingHelper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Weapons/PistolAutomatic Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Weapons/PistolAutomatic Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shooter.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,19 +38,35 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d1/d548d951/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/451ac23c/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d7/cfa8e4a5/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponHit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ISessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionInformationPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IDetailedSessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1rwevcKpSktkd0SEvD8fnQX6tdg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="10882000" />
+      <workItem from="1619891855887" duration="23058000" />
     </task>
     <servers />
   </component>
@@ -78,10 +116,25 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="670" y="209" key="RiderGenerateDialog" timestamp="1619968501839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="209" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619968501839" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619905930754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

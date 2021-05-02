@@ -4,11 +4,19 @@ using Random = UnityEngine.Random;
 public class TargetSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject targetPrefab;
-    [SerializeField] private int spawnCount;
+
+    [Header("Spawn distance")]
     [SerializeField] private float minDistance;
     [SerializeField] private float maxDistance;
+
+    [Header("Spawn height")]
+    [SerializeField] [Min(0)] private float minHeight;
+    [SerializeField] [Min(0)] private float maxHeight;
+
+    [Header("Spawn miscellaneous")]
+    [SerializeField] [Min(1)] private int spawnCount;
+    [SerializeField] [Min(0)] private float durationBetweenSpawns;
     [SerializeField] [Range(0, 360)] private float spawnAngle;
-    [SerializeField] [Range(0, 3)] private float durationBetweenSpawns;
 
     private float _currentDuration;
 
@@ -45,8 +53,9 @@ public class TargetSpawner : MonoBehaviour
         var angle = Random.Range(minAngle, maxAngle);
 
         var x = radius * Mathf.Cos(angle);
+        var y = Random.Range(minHeight, maxHeight);
         var z = radius * Mathf.Sin(angle);
 
-        return new Vector3(x, 0, z);
+        return new Vector3(x, y, z);
     }
 }
