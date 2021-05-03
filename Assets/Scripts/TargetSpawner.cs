@@ -20,6 +20,25 @@ public class TargetSpawner : MonoBehaviour
 
     private float _currentDuration;
 
+    private void Start()
+    {
+        minDistance = ShooterSettings.MinDistance;
+        maxDistance = ShooterSettings.MaxDistance;
+        minHeight = ShooterSettings.MinHeight;
+        maxHeight = ShooterSettings.MaxHeight;
+        spawnAngle = ShooterSettings.SpawnAngle;
+        spawnCount = ShooterSettings.SpawnCount;
+        durationBetweenSpawns = ShooterSettings.DurationBetweenSpawns;
+
+        Debug.Log($"Min distance {minDistance}");
+        Debug.Log($"Max distance {maxDistance}");
+        Debug.Log($"Min height {minHeight}");
+        Debug.Log($"Max height {maxHeight}");
+        Debug.Log($"Spawn angle {spawnAngle}");
+        Debug.Log($"Spawn count {spawnCount}");
+        Debug.Log($"Duration between rounds {durationBetweenSpawns}");
+    }
+
     private void Update()
     {
         _currentDuration += Time.deltaTime;
