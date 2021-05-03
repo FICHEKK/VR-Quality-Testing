@@ -11,6 +11,8 @@ namespace Serialization
     {
         private const string GeneralInformationExtension = ".txt";
         private const string WeaponHitsInformationExtension = ".csv";
+        private static readonly string Divider = new string('=', 10);
+
         private static readonly string SaveDirectory = Application.persistentDataPath;
 
         public static void Publish(ShooterSession session)
@@ -25,11 +27,19 @@ namespace Serialization
         {
             var fileContents = new List<string>
             {
-                $"Duration: {session.DurationInSeconds}",
                 $"Total: {session.TotalShotCount}",
                 $"Hits: {session.Shots.Count}",
                 $"Misses: {session.TotalShotCount - session.Shots.Count}",
-                $"Accuracy: {((float) session.Shots.Count / session.TotalShotCount).ToString(CultureInfo.InvariantCulture)}"
+                $"Accuracy: {((float) session.Shots.Count / session.TotalShotCount).ToString(CultureInfo.InvariantCulture)}",
+                $"{Divider}",
+                $"Min distance: {ShooterSettings.MinDistance.ToString(CultureInfo.InvariantCulture)}",
+                $"Max distance: {ShooterSettings.MaxDistance.ToString(CultureInfo.InvariantCulture)}",
+                $"Min height: {ShooterSettings.MinHeight.ToString(CultureInfo.InvariantCulture)}",
+                $"Max height: {ShooterSettings.MaxHeight.ToString(CultureInfo.InvariantCulture)}",
+                $"Spawn angle: {ShooterSettings.SpawnAngle.ToString(CultureInfo.InvariantCulture)}",
+                $"Spawn count: {ShooterSettings.SpawnCount.ToString(CultureInfo.InvariantCulture)}",
+                $"Duration between spawns: {ShooterSettings.DurationBetweenSpawns.ToString(CultureInfo.InvariantCulture)}",
+                $"Round duration: {ShooterSettings.RoundDuration.ToString(CultureInfo.InvariantCulture)}",
             };
 
             File.WriteAllLines(filePath + GeneralInformationExtension, fileContents);

@@ -27,6 +27,6 @@ public class SessionReporter : MonoBehaviour
 
     public void OnTimerRunOut()
     {
-        ShooterSessionPublisher.Publish(new ShooterSession(14, _totalHits, _weaponShots));
+        ShooterSessionPublisher.Publish(new ShooterSession(_totalHits, _weaponShots));
     }
 }

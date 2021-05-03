@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Grass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shooter.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shooter.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +55,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionInformationPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IDetailedSessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShooterRoundFinishHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShooterSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="30783000" />
+      <workItem from="1619891855887" duration="31222000" />
     </task>
     <servers />
   </component>
