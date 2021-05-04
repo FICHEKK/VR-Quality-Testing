@@ -17,6 +17,18 @@ namespace MainMenu
 
         private void Awake()
         {
+            InitializeIdFields();
+            InitializeGamePicker();
+        }
+
+        private void InitializeIdFields()
+        {
+            studyIdField.text = MainMenuSettings.StudyID;
+            participantIdField.text = MainMenuSettings.ParticipantID;
+        }
+
+        private void InitializeGamePicker()
+        {
             _gameToSceneName["Shooter"] = "ShooterSettings";
             _gameToSceneName["Fruit Ninja"] = "FruitNinjaSettings";
             _gameToSceneName["Pick And Place"] = "PickAndPlaceSettings";
