@@ -243,6 +243,10 @@
           <e p="Third-Party Notices.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="MainMenu" t="Include">
+            <e p="ContinueButton.cs" t="Include" />
+            <e p="MainMenuSettings.cs" t="Include" />
+          </e>
           <e p="PlayButton.cs" t="Include" />
           <e p="Serialization" t="Include">
             <e p="ShooterSession.cs" t="Include" />
@@ -254,6 +258,9 @@
           <e p="ShooterSettings.cs" t="Include" />
           <e p="Target.cs" t="Include" />
           <e p="TargetSpawner.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="SceneLoader.cs" t="Include" />
+          </e>
           <e p="WeaponShot.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
