@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace MainMenu
+namespace VrQualityTesting.Scripts.MainMenu
 {
     public class ContinueButton : MonoBehaviour
     {
@@ -23,8 +23,8 @@ namespace MainMenu
 
         private void InitializeIdFields()
         {
-            studyIdField.text = MainMenuSettings.StudyID;
-            participantIdField.text = MainMenuSettings.ParticipantID;
+            studyIdField.text = Settings.StudyID;
+            participantIdField.text = Settings.ParticipantID;
         }
 
         private void InitializeGamePicker()
@@ -65,8 +65,8 @@ namespace MainMenu
 
         private void UpdateMainMenuSettings()
         {
-            MainMenuSettings.StudyID = studyIdField.text;
-            MainMenuSettings.ParticipantID = participantIdField.text;
+            Settings.StudyID = studyIdField.text;
+            Settings.ParticipantID = participantIdField.text;
         }
     }
 }

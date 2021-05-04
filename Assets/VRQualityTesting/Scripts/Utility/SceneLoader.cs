@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Utility
+namespace VRQualityTesting.Scripts.Utility
 {
     public class SceneLoader : MonoBehaviour
     {

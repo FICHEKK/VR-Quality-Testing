@@ -855,9 +855,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 914406757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1131c8ceb2a112c48b9604f05ad125ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a403e2e6b70ac349a50f0bf272842b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: ShooterSettings
 --- !u!4 &914406759
 Transform:
   m_ObjectHideFlags: 0
@@ -1257,8 +1258,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 914406758}
-        m_TargetAssemblyTypeName: ShooterRoundFinishHandler, Assembly-CSharp
-        m_MethodName: OnRoundFinish
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Utility.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

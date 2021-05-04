@@ -20,8 +20,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grass.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grass.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pistol.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pistol.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShooterGame.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShooterGame.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShooterSettings.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShooterSettings.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/ContinueButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/ContinueButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSession.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShooterRoundFinishHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShooterRoundFinishHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShooterSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShooterSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Target.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Target.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponShot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponShot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +80,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/451ac23c/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShooterSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d1/d548d951/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionReporter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/13/e8f527be/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/ContinueButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShooterRoundFinishHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d7/cfa8e4a5/Application.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,6 +106,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/ContinueButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/ContinueButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/MainMenuSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterRoundFinishHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/RoundFinishHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterSession.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterSessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionTimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Session.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="37002000" />
+      <workItem from="1619891855887" duration="40064000" />
     </task>
     <servers />
   </component>
@@ -142,6 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="209" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619968501839" />
+    <state x="627" y="119" width="666" height="801" key="find.popup" timestamp="1620145180561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620145180561" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619905930754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

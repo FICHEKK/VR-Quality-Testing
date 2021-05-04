@@ -6562,6 +6562,7 @@ GameObject:
   - component: {fileID: 2101658417}
   - component: {fileID: 2101658416}
   - component: {fileID: 2101658419}
+  - component: {fileID: 2101658420}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -6634,8 +6635,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2101658419}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.PlayButton, Assembly-CSharp
+        m_MethodName: UpdateShooterSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2101658420}
+        m_TargetAssemblyTypeName: Utility.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6703,6 +6716,19 @@ MonoBehaviour:
   spawnCountField: {fileID: 1009946439}
   durationBetweenSpawnsField: {fileID: 2050788051}
   roundDurationField: {fileID: 1926410703}
+--- !u!114 &2101658420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101658414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a403e2e6b70ac349a50f0bf272842b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: ShooterGame
 --- !u!1 &2103721520
 GameObject:
   m_ObjectHideFlags: 0
