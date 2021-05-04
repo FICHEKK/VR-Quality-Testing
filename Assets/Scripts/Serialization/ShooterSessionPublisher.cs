@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using MainMenu;
 using UnityEngine;
 
 namespace Serialization
@@ -13,14 +14,27 @@ namespace Serialization
         private const string WeaponHitsInformationExtension = ".csv";
         private static readonly string Divider = new string('=', 10);
 
-        private static readonly string SaveDirectory = Application.persistentDataPath;
+        private static readonly string RootSaveDirectory = Application.persistentDataPath;
 
         public static void Publish(ShooterSession session)
         {
-            var filePath = SaveDirectory + "/" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-fff");
-            Debug.Log($"Saving to {filePath}");
+            var filePath = GetSaveFilePath();
             PublishGeneralInformation(filePath, session);
             PublishWeaponHitsInformation(filePath, session);
+        }
+
+        private static string GetSaveFilePath()
+        {
+            var studyId = MainMenuSettings.StudyID;
+            var participantId = MainMenuSettings.ParticipantID;
+            var saveFileDirectory = RootSaveDirectory + "/" + studyId + "/Shooter/" + participantId;
+
+            if (!Directory.Exists(saveFileDirectory))
+            {
+                Directory.CreateDirectory(saveFileDirectory);
+            }
+
+            return saveFileDirectory + "/" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-fff");
         }
 
         private static void PublishGeneralInformation(string filePath, ShooterSession session)
