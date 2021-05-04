@@ -10,5 +10,7 @@ namespace VRQualityTesting.Scripts.Shooter
         public static int SpawnCount = 1;
         public static float DurationBetweenSpawns = 1;
         public static float RoundDuration = 30;
+        public static float MinTargetSize = 0.5f;
+        public static float MaxTargetSize = 2;
     }
 }

@@ -12,6 +12,8 @@ namespace VRQualityTesting.Scripts.Shooter
         public int SpawnCount { get; set; }
         public float DurationBetweenSpawns { get; set; }
         public float SpawnAngle { get; set; }
+        public float MinTargetSize { get; set; }
+        public float MaxTargetSize { get; set; }
 
         [SerializeField] private GameObject targetPrefab;
         private float _currentDuration;
@@ -32,6 +34,7 @@ namespace VRQualityTesting.Scripts.Shooter
             for (var i = 0; i < SpawnCount; i++)
             {
                 var target = Instantiate(targetPrefab, GetRandomTargetPosition(), Quaternion.identity);
+                target.transform.localScale = GetRandomTargetSize();
                 target.transform.LookAt(2 * target.transform.position);
             }
         }
@@ -49,6 +52,12 @@ namespace VRQualityTesting.Scripts.Shooter
             var z = radius * Mathf.Sin(angle);
 
             return new Vector3(x, y, z);
+        }
+
+        private Vector3 GetRandomTargetSize()
+        {
+            var size = Random.Range(MinTargetSize, MaxTargetSize);
+            return new Vector3(size, size, 1);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using MainMenuSettings = VrQualityTesting.Scripts.MainMenu.Settings;
 
 namespace VRQualityTesting.Scripts.Shooter
 {
@@ -11,7 +12,7 @@ namespace VRQualityTesting.Scripts.Shooter
     {
         private const string GeneralInformationExtension = ".txt";
         private const string WeaponHitsInformationExtension = ".csv";
-        private const string WeaponHitsInformationHeader = "Distance from target, Distance from hit to center, Target life duration (ms)";
+        private const string WeaponHitsInformationHeader = "Distance from target, Distance from hit to center, Target life duration (ms), Target size";
         private const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss-fff";
 
         private static readonly string Divider = string.Empty;
@@ -26,8 +27,8 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private static string GetSaveFilePath()
         {
-            var studyId = VrQualityTesting.Scripts.MainMenu.Settings.StudyID;
-            var participantId = VrQualityTesting.Scripts.MainMenu.Settings.ParticipantID;
+            var studyId = MainMenuSettings.StudyID;
+            var participantId = MainMenuSettings.ParticipantID;
             var saveFileDirectory = RootSaveDirectory + "/" + studyId + "/Shooter/" + participantId;
 
             if (!Directory.Exists(saveFileDirectory))
@@ -55,6 +56,8 @@ namespace VRQualityTesting.Scripts.Shooter
                 $"Spawn count: {Settings.SpawnCount.ToString(CultureInfo.InvariantCulture)}",
                 $"Duration between spawns: {Settings.DurationBetweenSpawns.ToString(CultureInfo.InvariantCulture)}",
                 $"Round duration: {Settings.RoundDuration.ToString(CultureInfo.InvariantCulture)}",
+                $"Min target size: {Settings.MinTargetSize.ToString(CultureInfo.InvariantCulture)}",
+                $"Max target size: {Settings.MaxTargetSize.ToString(CultureInfo.InvariantCulture)}",
             };
 
             File.WriteAllLines(filePath + GeneralInformationExtension, fileContents);
@@ -65,7 +68,8 @@ namespace VRQualityTesting.Scripts.Shooter
             var fileContents = new List<string> {WeaponHitsInformationHeader};
             fileContents.AddRange(session.Hits.Select(shot => $"{shot.DistanceFromTarget.ToString(CultureInfo.InvariantCulture)}," +
                                                                $"{shot.DistanceFromHitToCenter.ToString(CultureInfo.InvariantCulture)}," +
-                                                               $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}"));
+                                                               $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}," +
+                                                               $"{shot.TargetSize.ToString(CultureInfo.InvariantCulture)}"));
 
             File.WriteAllLines(filePath + WeaponHitsInformationExtension, fileContents);
         }

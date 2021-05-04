@@ -28,6 +28,8 @@ namespace VRQualityTesting.Scripts.Shooter
             targetSpawner.SpawnAngle = Settings.SpawnAngle;
             targetSpawner.SpawnCount = Settings.SpawnCount;
             targetSpawner.DurationBetweenSpawns = Settings.DurationBetweenSpawns;
+            targetSpawner.MinTargetSize = Settings.MinTargetSize;
+            targetSpawner.MaxTargetSize = Settings.MaxTargetSize;
         }
     }
 }

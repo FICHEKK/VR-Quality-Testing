@@ -1,7 +1,6 @@
 using System.Globalization;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace VRQualityTesting.Scripts.Shooter
 {
@@ -15,6 +14,8 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private TMP_InputField spawnCountField;
         [SerializeField] private TMP_InputField durationBetweenSpawnsField;
         [SerializeField] private TMP_InputField roundDurationField;
+        [SerializeField] private TMP_InputField minTargetSizeField;
+        [SerializeField] private TMP_InputField maxTargetSizeField;
 
         private void Start()
         {
@@ -26,6 +27,8 @@ namespace VRQualityTesting.Scripts.Shooter
             spawnCountField.text = Settings.SpawnCount.ToString(CultureInfo.InvariantCulture);
             durationBetweenSpawnsField.text = Settings.DurationBetweenSpawns.ToString(CultureInfo.InvariantCulture);
             roundDurationField.text = Settings.RoundDuration.ToString(CultureInfo.InvariantCulture);
+            minTargetSizeField.text = Settings.MinTargetSize.ToString(CultureInfo.InvariantCulture);
+            maxTargetSizeField.text = Settings.MaxTargetSize.ToString(CultureInfo.InvariantCulture);
         }
 
         public void UpdateShooterSettings()
@@ -38,6 +41,8 @@ namespace VRQualityTesting.Scripts.Shooter
             Settings.SpawnCount = int.Parse(spawnCountField.text, CultureInfo.InvariantCulture);
             Settings.DurationBetweenSpawns = float.Parse(durationBetweenSpawnsField.text, CultureInfo.InvariantCulture);
             Settings.RoundDuration = float.Parse(roundDurationField.text, CultureInfo.InvariantCulture);
+            Settings.MinTargetSize = float.Parse(minTargetSizeField.text, CultureInfo.InvariantCulture);
+            Settings.MaxTargetSize = float.Parse(maxTargetSizeField.text, CultureInfo.InvariantCulture);
         }
     }
 }

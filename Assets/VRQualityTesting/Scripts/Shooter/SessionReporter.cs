@@ -17,13 +17,15 @@ namespace VRQualityTesting.Scripts.Shooter
         {
             if (!hit.transform.CompareTag(SuccessfulHitTag)) return;
 
-            var distanceFromTarget = hit.distance;
-            var distanceFromHitToCenter = (hit.point - hit.transform.position).magnitude;
-
             var targetBirthTimestamp = hit.transform.GetComponent<Target>().BirthTimestamp;
             var tookToDestroy = DateTime.Now - targetBirthTimestamp;
 
-            _targetHits.Add(new TargetHit(distanceFromTarget, distanceFromHitToCenter, (int) tookToDestroy.TotalMilliseconds));
+            _targetHits.Add(new TargetHit(
+                distanceFromTarget: hit.distance,
+                distanceFromHitToCenter: (hit.point - hit.transform.position).magnitude,
+                targetLifeDurationInMs: (int) tookToDestroy.TotalMilliseconds,
+                targetSize: hit.transform.localScale.x
+            ));
         }
 
         public void OnTimerRunOut() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));
