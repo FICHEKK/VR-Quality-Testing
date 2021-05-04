@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace VRQualityTesting.Scripts.Shooter
 {
     public class Target : MonoBehaviour
     {
+        public DateTime BirthTimestamp { get; } = DateTime.Now;
+
         private void Start() => StartCoroutine(ExpandFromSingularity());
 
         private IEnumerator ExpandFromSingularity()

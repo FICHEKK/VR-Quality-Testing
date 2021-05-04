@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,10 @@ namespace VRQualityTesting.Scripts.Shooter
             var distanceFromTarget = hit.distance;
             var distanceFromHitToCenter = (hit.point - hit.transform.position).magnitude;
 
-            _targetHits.Add(new TargetHit(distanceFromTarget, distanceFromHitToCenter));
+            var targetBirthTimestamp = hit.transform.GetComponent<Target>().BirthTimestamp;
+            var tookToDestroy = DateTime.Now - targetBirthTimestamp;
+
+            _targetHits.Add(new TargetHit(distanceFromTarget, distanceFromHitToCenter, (int) tookToDestroy.TotalMilliseconds));
         }
 
         public void OnTimerRunOut() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));

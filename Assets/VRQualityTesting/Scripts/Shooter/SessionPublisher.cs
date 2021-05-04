@@ -11,7 +11,7 @@ namespace VRQualityTesting.Scripts.Shooter
     {
         private const string GeneralInformationExtension = ".txt";
         private const string WeaponHitsInformationExtension = ".csv";
-        private const string WeaponHitsInformationHeader = "Distance from target, Distance from hit to center";
+        private const string WeaponHitsInformationHeader = "Distance from target, Distance from hit to center, Target life duration (ms)";
         private const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss-fff";
 
         private static readonly string Divider = string.Empty;
@@ -64,7 +64,8 @@ namespace VRQualityTesting.Scripts.Shooter
         {
             var fileContents = new List<string> {WeaponHitsInformationHeader};
             fileContents.AddRange(session.Hits.Select(shot => $"{shot.DistanceFromTarget.ToString(CultureInfo.InvariantCulture)}," +
-                                                               $"{shot.DistanceFromHitToCenter.ToString(CultureInfo.InvariantCulture)}"));
+                                                               $"{shot.DistanceFromHitToCenter.ToString(CultureInfo.InvariantCulture)}," +
+                                                               $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}"));
 
             File.WriteAllLines(filePath + WeaponHitsInformationExtension, fileContents);
         }
