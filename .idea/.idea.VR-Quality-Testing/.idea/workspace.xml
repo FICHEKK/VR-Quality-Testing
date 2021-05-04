@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/Target.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +37,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/451ac23c/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cb/955d1ba6/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d1/d548d951/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/13/e8f527be/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/7642cbd4/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/3a/5106b49d/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/52/bd6f5e57/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d7/cfa8e4a5/Application.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -72,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponShot.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterSessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Session.cs" />
@@ -81,6 +87,10 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="41805000" />
+      <workItem from="1619891855887" duration="45729000" />
     </task>
     <servers />
   </component>

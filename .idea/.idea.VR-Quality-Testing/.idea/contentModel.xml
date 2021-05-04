@@ -280,11 +280,11 @@
               <e p="Settings.cs" t="Include" />
             </e>
             <e p="Shooter" t="Include">
+              <e p="Initializer.cs" t="Include" />
               <e p="PlayButton.cs" t="Include" />
               <e p="Session.cs" t="Include" />
               <e p="SessionPublisher.cs" t="Include" />
               <e p="SessionReporter.cs" t="Include" />
-              <e p="SessionTimer.cs" t="Include" />
               <e p="Settings.cs" t="Include" />
               <e p="Target.cs" t="Include" />
               <e p="TargetHit.cs" t="Include" />
@@ -292,6 +292,7 @@
             </e>
             <e p="Utility" t="Include">
               <e p="SceneLoader.cs" t="Include" />
+              <e p="Timer.cs" t="Include" />
             </e>
           </e>
         </e>
