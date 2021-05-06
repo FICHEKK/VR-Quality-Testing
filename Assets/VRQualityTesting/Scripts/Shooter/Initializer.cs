@@ -30,6 +30,12 @@ namespace VRQualityTesting.Scripts.Shooter
             targetSpawner.DurationBetweenSpawns = Settings.DurationBetweenSpawns;
             targetSpawner.MinTargetSize = Settings.MinTargetSize;
             targetSpawner.MaxTargetSize = Settings.MaxTargetSize;
+
+            targetSpawner.MovingTargetProbability = Settings.MovingTargetProbability;
+            targetSpawner.MinVelocity = Settings.MinVelocity;
+            targetSpawner.MaxVelocity = Settings.MaxVelocity;
+            targetSpawner.MinOffset = Settings.MinOffset;
+            targetSpawner.MaxOffset = Settings.MaxOffset;
         }
     }
 }

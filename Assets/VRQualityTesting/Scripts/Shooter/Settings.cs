@@ -12,5 +12,10 @@ namespace VRQualityTesting.Scripts.Shooter
         public static float RoundDuration = 30;
         public static float MinTargetSize = 0.5f;
         public static float MaxTargetSize = 2;
+        public static float MovingTargetProbability = 0.2f;
+        public static float MinVelocity = 0.5f;
+        public static float MaxVelocity = 5f;
+        public static float MinOffset = 2f;
+        public static float MaxOffset = 8f;
     }
 }

@@ -17,14 +17,15 @@ namespace VRQualityTesting.Scripts.Shooter
         {
             if (!hit.transform.CompareTag(SuccessfulHitTag)) return;
 
-            var targetBirthTimestamp = hit.transform.GetComponent<Target>().BirthTimestamp;
-            var tookToDestroy = DateTime.Now - targetBirthTimestamp;
+            var target = hit.transform.GetComponent<Target>();
 
             _targetHits.Add(new TargetHit(
                 distanceFromTarget: hit.distance,
                 distanceFromHitToCenter: (hit.point - hit.transform.position).magnitude,
-                targetLifeDurationInMs: (int) tookToDestroy.TotalMilliseconds,
-                targetSize: hit.transform.localScale.x
+                targetLifeDurationInMs: (int) (DateTime.Now - target.BirthTimestamp).TotalMilliseconds,
+                targetSize: hit.transform.localScale.x,
+                targetVelocity: target.Velocity,
+                targetOffset: target.Offset
             ));
         }
 

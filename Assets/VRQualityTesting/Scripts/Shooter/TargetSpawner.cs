@@ -14,6 +14,11 @@ namespace VRQualityTesting.Scripts.Shooter
         public float SpawnAngle { get; set; }
         public float MinTargetSize { get; set; }
         public float MaxTargetSize { get; set; }
+        public float MovingTargetProbability { get; set; }
+        public float MinVelocity { get; set; }
+        public float MaxVelocity { get; set; }
+        public float MinOffset { get; set; }
+        public float MaxOffset { get; set; }
 
         [SerializeField] private GameObject targetPrefab;
         private float _currentDuration;
@@ -36,6 +41,12 @@ namespace VRQualityTesting.Scripts.Shooter
                 var target = Instantiate(targetPrefab, GetRandomTargetPosition(), Quaternion.identity);
                 target.transform.localScale = GetRandomTargetSize();
                 target.transform.LookAt(2 * target.transform.position);
+
+                if (Random.value < MovingTargetProbability)
+                {
+                    target.transform.GetComponent<Target>().Velocity = Random.Range(MinVelocity, MaxVelocity);
+                    target.transform.GetComponent<Target>().Offset = Random.Range(MinOffset, MaxOffset);
+                }
             }
         }
 

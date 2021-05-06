@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.22886854, g: 0.420933, b: 0.7486693, a: 1}
+  m_IndirectSpecularColor: {r: 0.2288695, g: 0.4209354, b: 0.7486709, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5843,7 +5843,7 @@ MonoBehaviour:
   ParentToHands: 1
   ParentHandModel: 1
   SnapHandModel: 1
-  CanBeDropped: 0
+  CanBeDropped: 1
   CanBeSnappedToSnapZone: 1
   ForceDisableKinematicOnDrop: 0
   InstantMovement: 0
@@ -14183,7 +14183,7 @@ MonoBehaviour:
   ParentToHands: 1
   ParentHandModel: 1
   SnapHandModel: 1
-  CanBeDropped: 0
+  CanBeDropped: 1
   CanBeSnappedToSnapZone: 1
   ForceDisableKinematicOnDrop: 0
   InstantMovement: 0
@@ -33268,8 +33268,7 @@ MonoBehaviour:
     type: 3}
   ProjectilePrefab: {fileID: 1449094533667961452, guid: 4af46545725f628459794cfc7c0f7d54,
     type: 3}
-  HitFXPrefab: {fileID: 3454612190511497970, guid: fa39ce2ce96bec94b82f2c8124ce3930,
-    type: 3}
+  HitFXPrefab: {fileID: 0}
   GunShotSound: {fileID: 8300000, guid: 6b23ba5ed1da95140b52f6863122d72b, type: 3}
   GunShotVolume: 0.75
   EmptySound: {fileID: 8300000, guid: 3ceadf14726b0864fb39bb646c0f9ba0, type: 3}
@@ -33284,7 +33283,20 @@ MonoBehaviour:
   EmptyBulletInChamber: 0
   onShootEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 725982047}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.SessionReporter,
+          Assembly-CSharp
+        m_MethodName: OnWeaponShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onAttachedAmmoEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -33299,7 +33311,20 @@ MonoBehaviour:
       m_Calls: []
   onRaycastHitEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 725982047}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.SessionReporter,
+          Assembly-CSharp
+        m_MethodName: OnWeaponHit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &2324622598175796379
 AudioSource:
   m_ObjectHideFlags: 0

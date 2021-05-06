@@ -17,6 +17,12 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private TMP_InputField minTargetSizeField;
         [SerializeField] private TMP_InputField maxTargetSizeField;
 
+        [SerializeField] private TMP_InputField movingTargetProbabilityField;
+        [SerializeField] private TMP_InputField minHorizontalVelocityField;
+        [SerializeField] private TMP_InputField maxHorizontalVelocityField;
+        [SerializeField] private TMP_InputField minVerticalVelocityField;
+        [SerializeField] private TMP_InputField maxVerticalVelocityField;
+
         private void Start()
         {
             minDistanceField.text = Settings.MinDistance.ToString(CultureInfo.InvariantCulture);
@@ -29,6 +35,12 @@ namespace VRQualityTesting.Scripts.Shooter
             roundDurationField.text = Settings.RoundDuration.ToString(CultureInfo.InvariantCulture);
             minTargetSizeField.text = Settings.MinTargetSize.ToString(CultureInfo.InvariantCulture);
             maxTargetSizeField.text = Settings.MaxTargetSize.ToString(CultureInfo.InvariantCulture);
+
+            movingTargetProbabilityField.text = Settings.MovingTargetProbability.ToString(CultureInfo.InvariantCulture);
+            minHorizontalVelocityField.text = Settings.MinVelocity.ToString(CultureInfo.InvariantCulture);
+            maxHorizontalVelocityField.text = Settings.MaxVelocity.ToString(CultureInfo.InvariantCulture);
+            minVerticalVelocityField.text = Settings.MinOffset.ToString(CultureInfo.InvariantCulture);
+            maxVerticalVelocityField.text = Settings.MaxOffset.ToString(CultureInfo.InvariantCulture);
         }
 
         public void UpdateShooterSettings()
@@ -43,6 +55,12 @@ namespace VRQualityTesting.Scripts.Shooter
             Settings.RoundDuration = float.Parse(roundDurationField.text, CultureInfo.InvariantCulture);
             Settings.MinTargetSize = float.Parse(minTargetSizeField.text, CultureInfo.InvariantCulture);
             Settings.MaxTargetSize = float.Parse(maxTargetSizeField.text, CultureInfo.InvariantCulture);
+
+            Settings.MovingTargetProbability = float.Parse(movingTargetProbabilityField.text, CultureInfo.InvariantCulture);
+            Settings.MinVelocity = float.Parse(minHorizontalVelocityField.text, CultureInfo.InvariantCulture);
+            Settings.MaxVelocity = float.Parse(maxHorizontalVelocityField.text, CultureInfo.InvariantCulture);
+            Settings.MinOffset = float.Parse(minVerticalVelocityField.text, CultureInfo.InvariantCulture);
+            Settings.MaxOffset = float.Parse(maxVerticalVelocityField.text, CultureInfo.InvariantCulture);
         }
     }
 }

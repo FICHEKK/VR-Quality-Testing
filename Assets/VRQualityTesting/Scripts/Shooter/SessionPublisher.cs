@@ -12,7 +12,7 @@ namespace VRQualityTesting.Scripts.Shooter
     {
         private const string GeneralInformationExtension = ".txt";
         private const string WeaponHitsInformationExtension = ".csv";
-        private const string WeaponHitsInformationHeader = "Distance from target, Distance from hit to center, Target life duration (ms), Target size";
+        private const string WeaponHitsInformationHeader = "Dst to target, Dst to center, Lifetime, Size, Velocity, Offset";
         private const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss-fff";
 
         private static readonly string Divider = string.Empty;
@@ -58,6 +58,12 @@ namespace VRQualityTesting.Scripts.Shooter
                 $"Round duration: {Settings.RoundDuration.ToString(CultureInfo.InvariantCulture)}",
                 $"Min target size: {Settings.MinTargetSize.ToString(CultureInfo.InvariantCulture)}",
                 $"Max target size: {Settings.MaxTargetSize.ToString(CultureInfo.InvariantCulture)}",
+                $"{Divider}",
+                $"Moving target probability: {Settings.MovingTargetProbability.ToString(CultureInfo.InvariantCulture)}",
+                $"Min velocity: {Settings.MinVelocity.ToString(CultureInfo.InvariantCulture)}",
+                $"Max velocity: {Settings.MaxVelocity.ToString(CultureInfo.InvariantCulture)}",
+                $"Min offset: {Settings.MinOffset.ToString(CultureInfo.InvariantCulture)}",
+                $"Max offset: {Settings.MaxOffset.ToString(CultureInfo.InvariantCulture)}",
             };
 
             File.WriteAllLines(filePath + GeneralInformationExtension, fileContents);
@@ -66,10 +72,12 @@ namespace VRQualityTesting.Scripts.Shooter
         private static void PublishTargetHitsInformation(string filePath, Session session)
         {
             var fileContents = new List<string> {WeaponHitsInformationHeader};
-            fileContents.AddRange(session.Hits.Select(shot => $"{shot.DistanceFromTarget.ToString(CultureInfo.InvariantCulture)}," +
-                                                               $"{shot.DistanceFromHitToCenter.ToString(CultureInfo.InvariantCulture)}," +
-                                                               $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}," +
-                                                               $"{shot.TargetSize.ToString(CultureInfo.InvariantCulture)}"));
+            fileContents.AddRange(session.Hits.Select(shot => $"{shot.DistanceFromTarget.ToString(CultureInfo.InvariantCulture)}, " +
+                                                               $"{shot.DistanceFromHitToCenter.ToString(CultureInfo.InvariantCulture)}, " +
+                                                               $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}, " +
+                                                               $"{shot.TargetSize.ToString(CultureInfo.InvariantCulture)}, " +
+                                                               $"{shot.TargetVelocity.ToString(CultureInfo.InvariantCulture)}, " +
+                                                               $"{shot.TargetOffset.ToString(CultureInfo.InvariantCulture)}"));
 
             File.WriteAllLines(filePath + WeaponHitsInformationExtension, fileContents);
         }
