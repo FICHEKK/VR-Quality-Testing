@@ -1,6 +1,7 @@
 using System.Globalization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace VRQualityTesting.Scripts.Shooter
 {
@@ -23,6 +24,11 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private TMP_InputField minVerticalVelocityField;
         [SerializeField] private TMP_InputField maxVerticalVelocityField;
 
+        [SerializeField] private TMP_Dropdown weaponTypeDropdown;
+        [SerializeField] private Toggle useLaserToggle;
+        [SerializeField] private Toggle showBulletTrajectoryToggle;
+        [SerializeField] private Toggle showMuzzleFlashToggle;
+
         private void Start()
         {
             minDistanceField.text = Settings.MinDistance.ToString(CultureInfo.InvariantCulture);
@@ -41,6 +47,11 @@ namespace VRQualityTesting.Scripts.Shooter
             maxHorizontalVelocityField.text = Settings.MaxVelocity.ToString(CultureInfo.InvariantCulture);
             minVerticalVelocityField.text = Settings.MinOffset.ToString(CultureInfo.InvariantCulture);
             maxVerticalVelocityField.text = Settings.MaxOffset.ToString(CultureInfo.InvariantCulture);
+
+            weaponTypeDropdown.value = (int) Settings.WeaponType;
+            useLaserToggle.isOn = Settings.UseLaser;
+            showBulletTrajectoryToggle.isOn = Settings.ShowBulletTrajectory;
+            showMuzzleFlashToggle.isOn = Settings.ShowMuzzleFlash;
         }
 
         public void UpdateShooterSettings()
@@ -61,6 +72,11 @@ namespace VRQualityTesting.Scripts.Shooter
             Settings.MaxVelocity = float.Parse(maxHorizontalVelocityField.text, CultureInfo.InvariantCulture);
             Settings.MinOffset = float.Parse(minVerticalVelocityField.text, CultureInfo.InvariantCulture);
             Settings.MaxOffset = float.Parse(maxVerticalVelocityField.text, CultureInfo.InvariantCulture);
+
+            Settings.WeaponType = (WeaponType) weaponTypeDropdown.value;
+            Settings.UseLaser = useLaserToggle.isOn;
+            Settings.ShowBulletTrajectory = showBulletTrajectoryToggle.isOn;
+            Settings.ShowMuzzleFlash = showMuzzleFlashToggle.isOn;
         }
     }
 }

@@ -1,3 +1,4 @@
+using BNG;
 using UnityEngine;
 using VRQualityTesting.Scripts.Utility;
 
@@ -8,10 +9,39 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private Timer timer;
         [SerializeField] private TargetSpawner targetSpawner;
 
+        [Header("Pistol")]
+        [SerializeField] private GameObject pistol;
+        [SerializeField] private GameObject pistolLaser;
+        [SerializeField] private RaycastWeapon pistolRaycastWeapon;
+
+        [Header("Rifle")]
+        [SerializeField] private GameObject rifle;
+        [SerializeField] private GameObject rifleLaser;
+        [SerializeField] private RaycastWeapon rifleRaycastWeapon;
+
         private void Start()
         {
+            InitializeWeapon();
             InitializeTimer();
             InitializeTargetSpawner();
+        }
+
+        private void InitializeWeapon()
+        {
+            pistol.SetActive(Settings.WeaponType == WeaponType.Pistol);
+            rifle.SetActive(Settings.WeaponType == WeaponType.Rifle);
+
+            pistolLaser.SetActive(Settings.UseLaser);
+            rifleLaser.SetActive(Settings.UseLaser);
+
+            pistolRaycastWeapon.AlwaysFireProjectile = Settings.ShowBulletTrajectory;
+            rifleRaycastWeapon.AlwaysFireProjectile = Settings.ShowBulletTrajectory;
+
+            if (!Settings.ShowMuzzleFlash)
+            {
+                pistolRaycastWeapon.MuzzleFlashObject = new GameObject();
+                rifleRaycastWeapon.MuzzleFlashObject = new GameObject();
+            }
         }
 
         private void InitializeTimer()

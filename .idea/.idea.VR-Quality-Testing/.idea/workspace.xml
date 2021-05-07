@@ -20,18 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/451ac23c/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cb/955d1ba6/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -51,6 +50,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/7642cbd4/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/3a/5106b49d/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/52/bd6f5e57/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d7/cfa8e4a5/Application.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -88,14 +88,16 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponType.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="54005000" />
+      <workItem from="1619891855887" duration="64318000" />
     </task>
     <servers />
   </component>
@@ -171,10 +173,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="209" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619968501839" />
-    <state x="272" y="0" width="1500" height="1027" key="dock-window-1" timestamp="1620325250745">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2070" y="156" width="1500" height="1027" key="dock-window-1" timestamp="1620335935334">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="272" y="0" width="1500" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620325250745" />
+    <state x="2070" y="156" width="1500" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620335935334" />
     <state x="627" y="119" width="666" height="801" key="find.popup" timestamp="1620145180561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
