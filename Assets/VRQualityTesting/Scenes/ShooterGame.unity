@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2288695, g: 0.4209354, b: 0.7486709, a: 1}
+  m_IndirectSpecularColor: {r: 0.22886854, g: 0.420933, b: 0.7486693, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -36916,7 +36916,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2683195715558696222}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -36927,7 +36927,7 @@ Transform:
   - {fileID: 1989293053221632347}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2683195715558696222
 GameObject:
   m_ObjectHideFlags: 0
@@ -50281,7 +50281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093207350341139549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 855d72b36bb9d904e80e3c9e587f3d8c, type: 3}
   m_Name: 
@@ -58460,7 +58460,7 @@ MonoBehaviour:
   ControllerHand: 0
   thisControllerModel: 
   OffsetPosition: {x: 0, y: 0, z: 0}
-  OffsetRotation: {x: 0, y: 0, z: 0}
+  OffsetRotation: {x: 45, y: 0, z: 0}
 --- !u!114 &5052651751605740699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58476,7 +58476,7 @@ MonoBehaviour:
   ControllerHand: 1
   thisControllerModel: 
   OffsetPosition: {x: 0, y: 0, z: 0}
-  OffsetRotation: {x: 0, y: 0, z: 0}
+  OffsetRotation: {x: 45, y: 0, z: 0}
 --- !u!136 &5055421973948331439
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -70199,7 +70199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd2fd7429a30714ca570a60a988ab32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultLocomotion: 0
+  DefaultLocomotion: 2
   LoadLocomotionFromPrefs: 0
   locomotionToggleInput: 0e000000
   LocomotionToggleAction: {fileID: 3512515067727415170, guid: e39f4b35a6db18348b41eb0262520e69,

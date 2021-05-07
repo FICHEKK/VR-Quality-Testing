@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Restricted
   - Player
   - Grabbable
-  - 
-  - 
+  - Debris
+  - Box
   - 
   - 
   - 
