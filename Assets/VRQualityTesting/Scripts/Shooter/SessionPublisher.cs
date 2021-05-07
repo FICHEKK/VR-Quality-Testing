@@ -4,7 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using MainMenuSettings = VrQualityTesting.Scripts.MainMenu.Settings;
+using VRQualityTesting.Scripts.Utility;
 
 namespace VRQualityTesting.Scripts.Shooter
 {
@@ -25,8 +25,8 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private static string GetSaveFilePath()
         {
-            var studyId = MainMenuSettings.StudyID;
-            var participantId = MainMenuSettings.ParticipantID;
+            var studyId = Settings.GetString(SettingsKeys.MainMenu.StudyID);
+            var participantId = Settings.GetString(SettingsKeys.MainMenu.ParticipantID);
             var saveFileDirectory = RootSaveDirectory + "/" + studyId + "/Shooter/" + participantId;
 
             if (!Directory.Exists(saveFileDirectory))
@@ -46,31 +46,31 @@ namespace VRQualityTesting.Scripts.Shooter
                 $"Hits: {session.Hits.Count}",
                 $"Misses: {session.TotalShotsFired - session.Hits.Count}",
                 $"Accuracy: {((float) session.Hits.Count / session.TotalShotsFired).ToString(CultureInfo.InvariantCulture)}",
-                $"Duration: {Settings.RoundDuration.ToString(CultureInfo.InvariantCulture)}",
+                $"Duration: {Settings.GetFloat(SettingsKeys.Shooter.RoundDuration).ToString(CultureInfo.InvariantCulture)}",
 
                 $"{Environment.NewLine}# Target spawner settings",
-                $"Min distance: {Settings.MinDistance.ToString(CultureInfo.InvariantCulture)}",
-                $"Max distance: {Settings.MaxDistance.ToString(CultureInfo.InvariantCulture)}",
-                $"Min height: {Settings.MinHeight.ToString(CultureInfo.InvariantCulture)}",
-                $"Max height: {Settings.MaxHeight.ToString(CultureInfo.InvariantCulture)}",
-                $"Spawn angle: {Settings.SpawnAngle.ToString(CultureInfo.InvariantCulture)}",
-                $"Spawn count: {Settings.SpawnCount.ToString(CultureInfo.InvariantCulture)}",
-                $"Duration between spawns: {Settings.DurationBetweenSpawns.ToString(CultureInfo.InvariantCulture)}",
+                $"Min distance: {Settings.GetFloat(SettingsKeys.Shooter.MinDistance).ToString(CultureInfo.InvariantCulture)}",
+                $"Max distance: {Settings.GetFloat(SettingsKeys.Shooter.MaxDistance).ToString(CultureInfo.InvariantCulture)}",
+                $"Min height: {Settings.GetFloat(SettingsKeys.Shooter.MinHeight).ToString(CultureInfo.InvariantCulture)}",
+                $"Max height: {Settings.GetFloat(SettingsKeys.Shooter.MaxHeight).ToString(CultureInfo.InvariantCulture)}",
+                $"Spawn angle: {Settings.GetFloat(SettingsKeys.Shooter.SpawnAngle).ToString(CultureInfo.InvariantCulture)}",
+                $"Spawn count: {Settings.GetInt(SettingsKeys.Shooter.SpawnCount).ToString(CultureInfo.InvariantCulture)}",
+                $"Duration between spawns: {Settings.GetFloat(SettingsKeys.Shooter.DurationBetweenSpawns).ToString(CultureInfo.InvariantCulture)}",
 
                 $"{Environment.NewLine}# Target settings",
-                $"Min size: {Settings.MinTargetSize.ToString(CultureInfo.InvariantCulture)}",
-                $"Max size: {Settings.MaxTargetSize.ToString(CultureInfo.InvariantCulture)}",
-                $"Moving probability: {Settings.MovingTargetProbability.ToString(CultureInfo.InvariantCulture)}",
-                $"Min velocity: {Settings.MinVelocity.ToString(CultureInfo.InvariantCulture)}",
-                $"Max velocity: {Settings.MaxVelocity.ToString(CultureInfo.InvariantCulture)}",
-                $"Min offset: {Settings.MinOffset.ToString(CultureInfo.InvariantCulture)}",
-                $"Max offset: {Settings.MaxOffset.ToString(CultureInfo.InvariantCulture)}",
+                $"Min size: {Settings.GetFloat(SettingsKeys.Shooter.MinSize).ToString(CultureInfo.InvariantCulture)}",
+                $"Max size: {Settings.GetFloat(SettingsKeys.Shooter.MaxSize).ToString(CultureInfo.InvariantCulture)}",
+                $"Moving probability: {Settings.GetFloat(SettingsKeys.Shooter.MovingProbability).ToString(CultureInfo.InvariantCulture)}",
+                $"Min velocity: {Settings.GetFloat(SettingsKeys.Shooter.MinVelocity).ToString(CultureInfo.InvariantCulture)}",
+                $"Max velocity: {Settings.GetFloat(SettingsKeys.Shooter.MaxVelocity).ToString(CultureInfo.InvariantCulture)}",
+                $"Min offset: {Settings.GetFloat(SettingsKeys.Shooter.MinOffset).ToString(CultureInfo.InvariantCulture)}",
+                $"Max offset: {Settings.GetFloat(SettingsKeys.Shooter.MaxOffset).ToString(CultureInfo.InvariantCulture)}",
 
                 $"{Environment.NewLine}# Weapon settings",
-                $"Type: {Settings.WeaponType}",
-                $"Use laser: {Settings.UseLaser}",
-                $"Show bullet trajectory: {Settings.ShowBulletTrajectory}",
-                $"Show muzzle flash: {Settings.ShowMuzzleFlash}",
+                $"Type: {(WeaponType) Settings.GetInt(SettingsKeys.Shooter.WeaponType)}",
+                $"Use laser: {Settings.GetBool(SettingsKeys.Shooter.UseLaser)}",
+                $"Show bullet trajectory: {Settings.GetBool(SettingsKeys.Shooter.ShowBulletTrajectory)}",
+                $"Show muzzle flash: {Settings.GetBool(SettingsKeys.Shooter.ShowMuzzleFlash)}",
             };
 
             File.WriteAllLines(filePath + GeneralInformationExtension, fileContents);

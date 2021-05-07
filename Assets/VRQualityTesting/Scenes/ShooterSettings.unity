@@ -1561,8 +1561,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1326549694}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.SettingsController,
+          Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 218940947}
-        m_TargetAssemblyTypeName: Utility.SceneLoader, Assembly-CSharp
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Utility.SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
@@ -9337,6 +9350,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326071794}
   m_CullTransparentMesh: 1
+--- !u!1 &1326549693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326549695}
+  - component: {fileID: 1326549694}
+  m_Layer: 0
+  m_Name: Settings Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1326549694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326549693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1736ffd9a54df1c45ac140fd1ac2c2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistanceField: {fileID: 614732675}
+  maxDistanceField: {fileID: 1394037263}
+  minHeightField: {fileID: 1463230038}
+  maxHeightField: {fileID: 2033037095}
+  spawnAngleField: {fileID: 396165927}
+  spawnCountField: {fileID: 1009946439}
+  durationBetweenSpawnsField: {fileID: 2050788051}
+  roundDurationField: {fileID: 1926410703}
+  minTargetSizeField: {fileID: 1325674948}
+  maxTargetSizeField: {fileID: 1112488188}
+  movingTargetProbabilityField: {fileID: 1163325683}
+  minVelocityField: {fileID: 785699378}
+  maxVelocityField: {fileID: 1257238992}
+  minOffsetField: {fileID: 1654895690}
+  maxOffsetField: {fileID: 912140754}
+  weaponTypeDropdown: {fileID: 1625671831}
+  useLaserToggle: {fileID: 24703022}
+  showBulletTrajectoryToggle: {fileID: 330138691}
+  showMuzzleFlashToggle: {fileID: 1706865593}
+--- !u!4 &1326549695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326549693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 534.5048, y: 290.75003, z: -41.956314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1339690540
 GameObject:
   m_ObjectHideFlags: 0
@@ -13770,7 +13845,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1852848035}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2578682
+  m_Size: 0.25786817
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13869,7 +13944,6 @@ GameObject:
   - component: {fileID: 2101658417}
   - component: {fileID: 2101658416}
   - component: {fileID: 2101658419}
-  - component: {fileID: 2101658420}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -13941,9 +14015,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2101658419}
-        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.PlayButton, Assembly-CSharp
-        m_MethodName: UpdateShooterSettings
+      - m_Target: {fileID: 1326549694}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Shooter.SettingsController,
+          Assembly-CSharp
+        m_MethodName: UpdateSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13953,8 +14028,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2101658420}
-        m_TargetAssemblyTypeName: Utility.SceneLoader, Assembly-CSharp
+      - m_Target: {fileID: 2101658419}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Utility.SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
@@ -14004,37 +14079,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 2101658414}
   m_CullTransparentMesh: 1
 --- !u!114 &2101658419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101658414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1736ffd9a54df1c45ac140fd1ac2c2a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDistanceField: {fileID: 614732675}
-  maxDistanceField: {fileID: 1394037263}
-  minHeightField: {fileID: 1463230038}
-  maxHeightField: {fileID: 2033037095}
-  spawnAngleField: {fileID: 396165927}
-  spawnCountField: {fileID: 1009946439}
-  durationBetweenSpawnsField: {fileID: 2050788051}
-  roundDurationField: {fileID: 1926410703}
-  minTargetSizeField: {fileID: 1325674948}
-  maxTargetSizeField: {fileID: 1112488188}
-  movingTargetProbabilityField: {fileID: 1163325683}
-  minHorizontalVelocityField: {fileID: 785699378}
-  maxHorizontalVelocityField: {fileID: 1257238992}
-  minVerticalVelocityField: {fileID: 1654895690}
-  maxVerticalVelocityField: {fileID: 912140754}
-  weaponTypeDropdown: {fileID: 1625671831}
-  useLaserToggle: {fileID: 24703022}
-  showBulletTrajectoryToggle: {fileID: 330138691}
-  showMuzzleFlashToggle: {fileID: 1706865593}
---- !u!114 &2101658420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

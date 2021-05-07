@@ -51,8 +51,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 7181655639013182524}
   minForceMultiplier: 6
   maxForceMultiplier: 8
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 0.5
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 3
   minBoxSize: 0.2
   maxBoxSize: 0.5
 --- !u!1 &7181655639013182527

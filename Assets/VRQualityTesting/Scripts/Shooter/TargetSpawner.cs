@@ -12,9 +12,9 @@ namespace VRQualityTesting.Scripts.Shooter
         public int SpawnCount { get; set; }
         public float DurationBetweenSpawns { get; set; }
         public float SpawnAngle { get; set; }
-        public float MinTargetSize { get; set; }
-        public float MaxTargetSize { get; set; }
-        public float MovingTargetProbability { get; set; }
+        public float MinSize { get; set; }
+        public float MaxSize { get; set; }
+        public float MovingProbability { get; set; }
         public float MinVelocity { get; set; }
         public float MaxVelocity { get; set; }
         public float MinOffset { get; set; }
@@ -58,7 +58,7 @@ namespace VRQualityTesting.Scripts.Shooter
                 target.transform.localScale = GetRandomTargetSize();
                 target.transform.LookAt(2 * target.transform.position);
 
-                if (Random.value < MovingTargetProbability)
+                if (Random.value < MovingProbability)
                 {
                     target.transform.GetComponent<Target>().Velocity = Random.Range(MinVelocity, MaxVelocity);
                     target.transform.GetComponent<Target>().Offset = Random.Range(MinOffset, MaxOffset);
@@ -83,7 +83,7 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private Vector3 GetRandomTargetSize()
         {
-            var size = Random.Range(MinTargetSize, MaxTargetSize);
+            var size = Random.Range(MinSize, MaxSize);
             return new Vector3(size, size, 1);
         }
     }

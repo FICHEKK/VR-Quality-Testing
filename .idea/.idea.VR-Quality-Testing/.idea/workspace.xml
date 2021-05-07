@@ -20,11 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Controller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SettingsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Box Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Box Cannon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/ContinueButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/ContinueButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Controller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Settings.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SettingsController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,19 +59,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d1/d548d951/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/13/e8f527be/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/12/7642cbd4/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/3a/5106b49d/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/52/bd6f5e57/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Router.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/d7/cfa8e4a5/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/9e/1d4f57d3/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SettingsKeys.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/3a/5106b49d/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Target.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponHit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponShot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ISessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionInformationPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IDetailedSessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/IGeneralSessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetSpawner.cs" />
@@ -70,7 +85,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/ContinueButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/ShooterSessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/ContinueButton.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/MainMenuSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/ShooterRoundFinishHandler.cs" />
@@ -86,14 +100,29 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponType.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SettingsKey.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/ContinueButton.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SettingsKeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SettingsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/SettingsValidator.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/GameRouter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/SettingsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Router.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Scribe.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Validator.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Controller.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="67723000" />
+      <workItem from="1619891855887" duration="79747000" />
     </task>
     <servers />
   </component>
@@ -173,10 +202,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2070" y="156" width="1500" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620335935334" />
-    <state x="627" y="119" width="666" height="801" key="find.popup" timestamp="1620145180561">
+    <state x="1990" y="0" width="1500" height="1027" key="dock-window-2" timestamp="1620418506705">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1990" y="0" width="1500" height="1027" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620418506705" />
+    <state x="627" y="119" width="666" height="801" key="find.popup" timestamp="1620419229095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620145180561" />
+    <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620419229095" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620346581849">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

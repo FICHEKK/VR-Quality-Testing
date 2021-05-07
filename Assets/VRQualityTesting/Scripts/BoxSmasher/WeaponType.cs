@@ -1,7 +1,10 @@
-public enum WeaponType
+namespace VRQualityTesting.Scripts.BoxSmasher
 {
-    Katana,
-    Hammer,
-    Knife,
-    Hand
+    public enum WeaponType
+    {
+        Katana,
+        Hammer,
+        Knife,
+        Hand
+    }
 }

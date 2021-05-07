@@ -28,16 +28,19 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private void InitializeWeapon()
         {
-            pistol.SetActive(Settings.WeaponType == WeaponType.Pistol);
-            rifle.SetActive(Settings.WeaponType == WeaponType.Rifle);
+            var weaponType = (WeaponType) Settings.GetInt(SettingsKeys.Shooter.WeaponType);
+            pistol.SetActive(weaponType == WeaponType.Pistol);
+            rifle.SetActive(weaponType == WeaponType.Rifle);
 
-            pistolLaser.SetActive(Settings.UseLaser);
-            rifleLaser.SetActive(Settings.UseLaser);
+            var useLaser = Settings.GetBool(SettingsKeys.Shooter.UseLaser);
+            pistolLaser.SetActive(useLaser);
+            rifleLaser.SetActive(useLaser);
 
-            pistolRaycastWeapon.AlwaysFireProjectile = Settings.ShowBulletTrajectory;
-            rifleRaycastWeapon.AlwaysFireProjectile = Settings.ShowBulletTrajectory;
+            var showBulletTrajectory = Settings.GetBool(SettingsKeys.Shooter.ShowBulletTrajectory);
+            pistolRaycastWeapon.AlwaysFireProjectile = showBulletTrajectory;
+            rifleRaycastWeapon.AlwaysFireProjectile = showBulletTrajectory;
 
-            if (!Settings.ShowMuzzleFlash)
+            if (!Settings.GetBool(SettingsKeys.Shooter.ShowMuzzleFlash))
             {
                 pistolRaycastWeapon.MuzzleFlashObject = new GameObject();
                 rifleRaycastWeapon.MuzzleFlashObject = new GameObject();
@@ -46,26 +49,26 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private void InitializeTimer()
         {
-            timer.TimeLeft = Settings.RoundDuration;
+            timer.TimeLeft = Settings.GetFloat(SettingsKeys.Shooter.RoundDuration);
         }
 
         private void InitializeTargetSpawner()
         {
-            targetSpawner.MinDistance = Settings.MinDistance;
-            targetSpawner.MaxDistance = Settings.MaxDistance;
-            targetSpawner.MinHeight = Settings.MinHeight;
-            targetSpawner.MaxHeight = Settings.MaxHeight;
-            targetSpawner.SpawnAngle = Settings.SpawnAngle;
-            targetSpawner.SpawnCount = Settings.SpawnCount;
-            targetSpawner.DurationBetweenSpawns = Settings.DurationBetweenSpawns;
-            targetSpawner.MinTargetSize = Settings.MinTargetSize;
-            targetSpawner.MaxTargetSize = Settings.MaxTargetSize;
+            targetSpawner.MinDistance = Settings.GetFloat(SettingsKeys.Shooter.MinDistance);
+            targetSpawner.MaxDistance = Settings.GetFloat(SettingsKeys.Shooter.MaxDistance);
+            targetSpawner.MinHeight = Settings.GetFloat(SettingsKeys.Shooter.MinHeight);
+            targetSpawner.MaxHeight = Settings.GetFloat(SettingsKeys.Shooter.MaxHeight);
+            targetSpawner.SpawnAngle = Settings.GetFloat(SettingsKeys.Shooter.SpawnAngle);
+            targetSpawner.SpawnCount = Settings.GetInt(SettingsKeys.Shooter.SpawnCount);
+            targetSpawner.DurationBetweenSpawns = Settings.GetFloat(SettingsKeys.Shooter.DurationBetweenSpawns);
+            targetSpawner.MinSize = Settings.GetFloat(SettingsKeys.Shooter.MinSize);
+            targetSpawner.MaxSize = Settings.GetFloat(SettingsKeys.Shooter.MaxSize);
 
-            targetSpawner.MovingTargetProbability = Settings.MovingTargetProbability;
-            targetSpawner.MinVelocity = Settings.MinVelocity;
-            targetSpawner.MaxVelocity = Settings.MaxVelocity;
-            targetSpawner.MinOffset = Settings.MinOffset;
-            targetSpawner.MaxOffset = Settings.MaxOffset;
+            targetSpawner.MovingProbability = Settings.GetFloat(SettingsKeys.Shooter.MovingProbability);
+            targetSpawner.MinVelocity = Settings.GetFloat(SettingsKeys.Shooter.MinVelocity);
+            targetSpawner.MaxVelocity = Settings.GetFloat(SettingsKeys.Shooter.MaxVelocity);
+            targetSpawner.MinOffset = Settings.GetFloat(SettingsKeys.Shooter.MinOffset);
+            targetSpawner.MaxOffset = Settings.GetFloat(SettingsKeys.Shooter.MaxOffset);
         }
     }
 }
