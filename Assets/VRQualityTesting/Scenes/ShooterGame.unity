@@ -3402,6 +3402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ce1650c124e46428be10f3fbd4dcc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetSpawner: {fileID: 929871664}
 --- !u!4 &725982048
 Transform:
   m_ObjectHideFlags: 0

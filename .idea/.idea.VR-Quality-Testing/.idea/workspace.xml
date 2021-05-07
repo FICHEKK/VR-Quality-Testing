@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BNG Framework/Prefabs/Projectile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterSettings.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,16 +84,16 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetHit.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponType.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/PlayButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/TargetSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Target.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="64318000" />
+      <workItem from="1619891855887" duration="67723000" />
     </task>
     <servers />
   </component>
@@ -181,9 +177,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620145180561" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619905930754">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620346581849">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619905930754" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620346581849" />
   </component>
 </project>

@@ -22,9 +22,25 @@ namespace VRQualityTesting.Scripts.Shooter
 
         [SerializeField] private GameObject targetPrefab;
         private float _currentDuration;
+        private int _targetsHitSinceLastSpawn;
+
+        private void Start() => SpawnTargets();
+
+        public void OnTargetHit()
+        {
+            if (DurationBetweenSpawns > 0) return;
+            _targetsHitSinceLastSpawn++;
+
+            if (_targetsHitSinceLastSpawn == SpawnCount)
+            {
+                SpawnTargets();
+                _targetsHitSinceLastSpawn = 0;
+            }
+        }
 
         private void Update()
         {
+            if (DurationBetweenSpawns <= 0) return;
             _currentDuration += Time.deltaTime;
 
             if (_currentDuration >= DurationBetweenSpawns)

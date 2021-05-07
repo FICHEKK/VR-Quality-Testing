@@ -19,7 +19,7 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private GameObject rifleLaser;
         [SerializeField] private RaycastWeapon rifleRaycastWeapon;
 
-        private void Start()
+        private void Awake()
         {
             InitializeWeapon();
             InitializeTimer();

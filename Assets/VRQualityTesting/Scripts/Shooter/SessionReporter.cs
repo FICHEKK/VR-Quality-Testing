@@ -8,6 +8,7 @@ namespace VRQualityTesting.Scripts.Shooter
     {
         private const string TargetTag = "Target";
 
+        [SerializeField] private TargetSpawner targetSpawner;
         private int _totalShotsFired;
         private readonly List<TargetHit> _targetHits = new List<TargetHit>();
 
@@ -18,7 +19,7 @@ namespace VRQualityTesting.Scripts.Shooter
             if (!hit.transform.CompareTag(TargetTag)) return;
 
             var target = hit.transform.GetComponent<Target>();
-            AddTargetHit(hit.point, target.transform.position, target);
+            AddTargetHit(hit.point, target);
         }
 
         public void OnProjectileCollision(Collision collision)
@@ -26,21 +27,27 @@ namespace VRQualityTesting.Scripts.Shooter
             if (!collision.transform.CompareTag(TargetTag)) return;
 
             var hitPoint = collision.contacts[0].point;
-            var targetTransform = collision.transform;
-            var targetPosition = targetTransform.position;
-            var target = targetTransform.GetComponent<Target>();
+            var target = collision.transform.GetComponent<Target>();
 
-            AddTargetHit(hitPoint, targetPosition, target);
+            AddTargetHit(hitPoint, target);
         }
 
-        private void AddTargetHit(Vector3 hitPoint, Vector3 targetPosition, Target target) => _targetHits.Add(new TargetHit(
-            distanceFromTarget: targetPosition.magnitude,
-            distanceFromHitToCenter: (hitPoint - targetPosition).magnitude,
-            targetLifeDurationInMs: (int) (DateTime.Now - target.BirthTimestamp).TotalMilliseconds,
-            targetSize: target.transform.localScale.x,
-            targetVelocity: target.Velocity,
-            targetOffset: target.Offset
-        ));
+        private void AddTargetHit(Vector3 hitPoint, Target target)
+        {
+            var targetTransform = target.transform;
+            var targetPosition = targetTransform.position;
+
+            _targetHits.Add(new TargetHit(
+                distanceFromTarget: targetPosition.magnitude,
+                distanceFromHitToCenter: (hitPoint - targetPosition).magnitude,
+                targetLifeDurationInMs: (int) (DateTime.Now - target.BirthTimestamp).TotalMilliseconds,
+                targetSize: targetTransform.localScale.x,
+                targetVelocity: target.Velocity,
+                targetOffset: target.Offset
+            ));
+
+            targetSpawner.OnTargetHit();
+        }
 
         public void OnTimerRunOut() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));
     }

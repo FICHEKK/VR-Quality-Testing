@@ -7,12 +7,15 @@ namespace VRQualityTesting.Scripts.Shooter
 {
     public class Target : MonoBehaviour
     {
+        private const float DirectionChangeCooldownDuration = 0.1f;
+
         public DateTime BirthTimestamp { get; } = DateTime.Now;
         public float Velocity { get; set; }
         public float Offset { get; set; }
 
         private Vector3 _initialPosition;
         private Vector2 _moveDirection;
+        private float _directionChangeCooldown;
 
         private void Awake()
         {
@@ -27,9 +30,12 @@ namespace VRQualityTesting.Scripts.Shooter
             transform.position += transform.right * (_moveDirection.x * Velocity * Time.deltaTime);
             transform.position += transform.up * (_moveDirection.y * Velocity * Time.deltaTime);
 
-            if ((transform.position - _initialPosition).magnitude > Offset)
+            _directionChangeCooldown -= Time.deltaTime;
+
+            if (_directionChangeCooldown <= 0 && (transform.position - _initialPosition).magnitude > Offset)
             {
                 _moveDirection *= -1;
+                _directionChangeCooldown = DirectionChangeCooldownDuration;
             }
         }
 
