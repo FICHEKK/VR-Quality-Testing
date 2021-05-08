@@ -15,11 +15,10 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private TMP_InputField spawnAngleField;
         [SerializeField] private TMP_InputField spawnCountField;
         [SerializeField] private TMP_InputField durationBetweenSpawnsField;
-        [SerializeField] private TMP_InputField roundDurationField;
-        [SerializeField] private TMP_InputField minTargetSizeField;
-        [SerializeField] private TMP_InputField maxTargetSizeField;
 
-        [SerializeField] private TMP_InputField movingTargetProbabilityField;
+        [SerializeField] private TMP_InputField minSizeField;
+        [SerializeField] private TMP_InputField maxSizeField;
+        [SerializeField] private TMP_InputField movingProbabilityField;
         [SerializeField] private TMP_InputField minVelocityField;
         [SerializeField] private TMP_InputField maxVelocityField;
         [SerializeField] private TMP_InputField minOffsetField;
@@ -29,6 +28,8 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private Toggle useLaserToggle;
         [SerializeField] private Toggle showBulletTrajectoryToggle;
         [SerializeField] private Toggle showMuzzleFlashToggle;
+
+        [SerializeField] private TMP_InputField roundDurationField;
 
         private void Start() => InitializeSettings();
 
@@ -42,10 +43,10 @@ namespace VRQualityTesting.Scripts.Shooter
             spawnCountField.text = Settings.GetInt(SettingsKeys.Shooter.SpawnCount).ToString(CultureInfo.InvariantCulture);
             durationBetweenSpawnsField.text = Settings.GetFloat(SettingsKeys.Shooter.DurationBetweenSpawns).ToString(CultureInfo.InvariantCulture);
             roundDurationField.text = Settings.GetFloat(SettingsKeys.Shooter.RoundDuration).ToString(CultureInfo.InvariantCulture);
-            minTargetSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MinSize).ToString(CultureInfo.InvariantCulture);
-            maxTargetSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxSize).ToString(CultureInfo.InvariantCulture);
+            minSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MinSize).ToString(CultureInfo.InvariantCulture);
+            maxSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxSize).ToString(CultureInfo.InvariantCulture);
 
-            movingTargetProbabilityField.text = Settings.GetFloat(SettingsKeys.Shooter.MovingProbability).ToString(CultureInfo.InvariantCulture);
+            movingProbabilityField.text = Settings.GetFloat(SettingsKeys.Shooter.MovingProbability).ToString(CultureInfo.InvariantCulture);
             minVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MinVelocity).ToString(CultureInfo.InvariantCulture);
             maxVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxVelocity).ToString(CultureInfo.InvariantCulture);
             minOffsetField.text = Settings.GetFloat(SettingsKeys.Shooter.MinOffset).ToString(CultureInfo.InvariantCulture);
@@ -83,9 +84,9 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private void UpdateTargetSettings()
         {
-            Settings.SetFloat(SettingsKeys.Shooter.MinSize, float.Parse(minTargetSizeField.text, CultureInfo.InvariantCulture));
-            Settings.SetFloat(SettingsKeys.Shooter.MaxSize, float.Parse(maxTargetSizeField.text, CultureInfo.InvariantCulture));
-            Settings.SetFloat(SettingsKeys.Shooter.MovingProbability, float.Parse(movingTargetProbabilityField.text, CultureInfo.InvariantCulture));
+            Settings.SetFloat(SettingsKeys.Shooter.MinSize, float.Parse(minSizeField.text, CultureInfo.InvariantCulture));
+            Settings.SetFloat(SettingsKeys.Shooter.MaxSize, float.Parse(maxSizeField.text, CultureInfo.InvariantCulture));
+            Settings.SetFloat(SettingsKeys.Shooter.MovingProbability, float.Parse(movingProbabilityField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(SettingsKeys.Shooter.MinVelocity, float.Parse(minVelocityField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(SettingsKeys.Shooter.MaxVelocity, float.Parse(maxVelocityField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(SettingsKeys.Shooter.MinOffset, float.Parse(minOffsetField.text, CultureInfo.InvariantCulture));

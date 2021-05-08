@@ -302,6 +302,8 @@
               <e p="SceneLoader.cs" t="Include" />
               <e p="Settings.cs" t="Include" />
               <e p="SettingsKeys.cs" t="Include" />
+              <e p="Tab.cs" t="Include" />
+              <e p="TabGroup.cs" t="Include" />
               <e p="Timer.cs" t="Include" />
             </e>
           </e>
