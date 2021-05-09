@@ -11,8 +11,8 @@ namespace VRQualityTesting.Scripts.MainMenu
 
         public IReadOnlyDictionary<string, string> GameTitleToSceneName { get; } = new Dictionary<string, string>
         {
-            {"Shooter", "ShooterSettings"},
-            {"Box Smasher", "BoxSmasherSettings"}
+            {"Shooter", "ShooterMenu"},
+            {"Box Smasher", "BoxSmasherMenu"}
         };
 
         public void RouteToNextScene()

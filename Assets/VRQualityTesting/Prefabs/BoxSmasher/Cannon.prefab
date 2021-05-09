@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5387627090679932368}
   - component: {fileID: 2422007610652975351}
   m_Layer: 0
-  m_Name: Box Cannon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3306374939469009985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1851643133456570320}
   - {fileID: 4181133701489114758}
@@ -49,11 +49,11 @@ MonoBehaviour:
   objectToShoot: {fileID: 9136654496466523200, guid: b0695af81d6c9d043a6722982e5635fd,
     type: 3}
   spawnPoint: {fileID: 7181655639013182524}
-  minForceMultiplier: 6
-  maxForceMultiplier: 8
+  minForceMultiplier: 8
+  maxForceMultiplier: 9
   minTimeBetweenShots: 2
   maxTimeBetweenShots: 3
-  minBoxSize: 0.2
+  minBoxSize: 0.3
   maxBoxSize: 0.5
 --- !u!1 &7181655639013182527
 GameObject:

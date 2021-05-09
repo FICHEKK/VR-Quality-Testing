@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRQualityTesting.Scripts.Utility;
 
-namespace VRQualityTesting.Scripts.Shooter
+namespace VRQualityTesting.Scripts.ShooterMenu
 {
-    public class SettingsController : MonoBehaviour
+    public class Scribe : MonoBehaviour
     {
         [SerializeField] private TMP_InputField minDistanceField;
         [SerializeField] private TMP_InputField maxDistanceField;
@@ -35,43 +35,56 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private void InitializeSettings()
         {
-            minDistanceField.text = Settings.GetFloat(SettingsKeys.Shooter.MinDistance).ToString(CultureInfo.InvariantCulture);
-            maxDistanceField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxDistance).ToString(CultureInfo.InvariantCulture);
-            minHeightField.text = Settings.GetFloat(SettingsKeys.Shooter.MinHeight).ToString(CultureInfo.InvariantCulture);
-            maxHeightField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxHeight).ToString(CultureInfo.InvariantCulture);
-            spawnAngleField.text = Settings.GetFloat(SettingsKeys.Shooter.SpawnAngle).ToString(CultureInfo.InvariantCulture);
-            spawnCountField.text = Settings.GetInt(SettingsKeys.Shooter.SpawnCount).ToString(CultureInfo.InvariantCulture);
-            durationBetweenSpawnsField.text = Settings.GetFloat(SettingsKeys.Shooter.DurationBetweenSpawns).ToString(CultureInfo.InvariantCulture);
-            roundDurationField.text = Settings.GetFloat(SettingsKeys.Shooter.RoundDuration).ToString(CultureInfo.InvariantCulture);
-            minSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MinSize).ToString(CultureInfo.InvariantCulture);
-            maxSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxSize).ToString(CultureInfo.InvariantCulture);
+            InitializeTargetSpawnerSettings();
+            InitializeTargetSettings();
+            InitializeWeaponSettings();
+            InitializeRoundSettings();
+        }
 
-            movingProbabilityField.text = Settings.GetFloat(SettingsKeys.Shooter.MovingProbability).ToString(CultureInfo.InvariantCulture);
-            minVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MinVelocity).ToString(CultureInfo.InvariantCulture);
-            maxVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxVelocity).ToString(CultureInfo.InvariantCulture);
-            minOffsetField.text = Settings.GetFloat(SettingsKeys.Shooter.MinOffset).ToString(CultureInfo.InvariantCulture);
-            maxOffsetField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxOffset).ToString(CultureInfo.InvariantCulture);
+        private void InitializeTargetSpawnerSettings()
+        {
+            minDistanceField.text = Settings.GetFloat(SettingsKeys.Shooter.MinDistance, defaultValue: 8f).ToString(CultureInfo.InvariantCulture);
+            maxDistanceField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxDistance, defaultValue: 12f).ToString(CultureInfo.InvariantCulture);
+            minHeightField.text = Settings.GetFloat(SettingsKeys.Shooter.MinHeight, defaultValue: 3f).ToString(CultureInfo.InvariantCulture);
+            maxHeightField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxHeight, defaultValue: 7f).ToString(CultureInfo.InvariantCulture);
+            spawnAngleField.text = Settings.GetFloat(SettingsKeys.Shooter.SpawnAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
+            spawnCountField.text = Settings.GetInt(SettingsKeys.Shooter.SpawnCount, defaultValue: 3).ToString(CultureInfo.InvariantCulture);
+            durationBetweenSpawnsField.text = Settings.GetFloat(SettingsKeys.Shooter.DurationBetweenSpawns, defaultValue: 0f).ToString(CultureInfo.InvariantCulture);
+        }
 
+        private void InitializeTargetSettings()
+        {
+            minSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MinSize, defaultValue: 0.5f).ToString(CultureInfo.InvariantCulture);
+            maxSizeField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxSize, defaultValue: 2f).ToString(CultureInfo.InvariantCulture);
+            movingProbabilityField.text = Settings.GetFloat(SettingsKeys.Shooter.MovingProbability, defaultValue: 0.2f).ToString(CultureInfo.InvariantCulture);
+            minVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MinVelocity, defaultValue: 0.5f).ToString(CultureInfo.InvariantCulture);
+            maxVelocityField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxVelocity, defaultValue: 5f).ToString(CultureInfo.InvariantCulture);
+            minOffsetField.text = Settings.GetFloat(SettingsKeys.Shooter.MinOffset, defaultValue: 2f).ToString(CultureInfo.InvariantCulture);
+            maxOffsetField.text = Settings.GetFloat(SettingsKeys.Shooter.MaxOffset, defaultValue: 8f).ToString(CultureInfo.InvariantCulture);
+        }
+
+        private void InitializeWeaponSettings()
+        {
             weaponTypeDropdown.value = Settings.GetInt(SettingsKeys.Shooter.WeaponType);
-            useLaserToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.UseLaser);
-            showBulletTrajectoryToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.ShowBulletTrajectory);
-            showMuzzleFlashToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.ShowMuzzleFlash);
+            useLaserToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.UseLaser, defaultValue: true);
+            showBulletTrajectoryToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.ShowBulletTrajectory, defaultValue: true);
+            showMuzzleFlashToggle.isOn = Settings.GetBool(SettingsKeys.Shooter.ShowMuzzleFlash, defaultValue: true);
         }
 
-        public void UpdateSettings()
+        private void InitializeRoundSettings()
         {
-            UpdateRoundSettings();
-            UpdateTargetSpawnerSettings();
-            UpdateTargetSettings();
-            UpdateWeaponSettings();
+            roundDurationField.text = Settings.GetFloat(SettingsKeys.Shooter.RoundDuration, defaultValue: 60f).ToString(CultureInfo.InvariantCulture);
         }
 
-        private void UpdateRoundSettings()
+        public void SaveSettings()
         {
-            Settings.SetFloat(SettingsKeys.Shooter.RoundDuration, float.Parse(roundDurationField.text, CultureInfo.InvariantCulture));
+            SaveTargetSpawnerSettings();
+            SaveTargetSettings();
+            SaveWeaponSettings();
+            SaveRoundSettings();
         }
 
-        private void UpdateTargetSpawnerSettings()
+        private void SaveTargetSpawnerSettings()
         {
             Settings.SetFloat(SettingsKeys.Shooter.MinDistance, float.Parse(minDistanceField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(SettingsKeys.Shooter.MaxDistance, float.Parse(maxDistanceField.text, CultureInfo.InvariantCulture));
@@ -82,7 +95,7 @@ namespace VRQualityTesting.Scripts.Shooter
             Settings.SetFloat(SettingsKeys.Shooter.DurationBetweenSpawns, float.Parse(durationBetweenSpawnsField.text, CultureInfo.InvariantCulture));
         }
 
-        private void UpdateTargetSettings()
+        private void SaveTargetSettings()
         {
             Settings.SetFloat(SettingsKeys.Shooter.MinSize, float.Parse(minSizeField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(SettingsKeys.Shooter.MaxSize, float.Parse(maxSizeField.text, CultureInfo.InvariantCulture));
@@ -93,12 +106,17 @@ namespace VRQualityTesting.Scripts.Shooter
             Settings.SetFloat(SettingsKeys.Shooter.MaxOffset, float.Parse(maxOffsetField.text, CultureInfo.InvariantCulture));
         }
 
-        private void UpdateWeaponSettings()
+        private void SaveWeaponSettings()
         {
             Settings.SetInt(SettingsKeys.Shooter.WeaponType, weaponTypeDropdown.value);
             Settings.SetBool(SettingsKeys.Shooter.UseLaser, useLaserToggle.isOn);
             Settings.SetBool(SettingsKeys.Shooter.ShowBulletTrajectory, showBulletTrajectoryToggle.isOn);
             Settings.SetBool(SettingsKeys.Shooter.ShowMuzzleFlash, showMuzzleFlashToggle.isOn);
+        }
+
+        private void SaveRoundSettings()
+        {
+            Settings.SetFloat(SettingsKeys.Shooter.RoundDuration, float.Parse(roundDurationField.text, CultureInfo.InvariantCulture));
         }
     }
 }

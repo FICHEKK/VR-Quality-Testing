@@ -6,14 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VrQualityTesting/Scenes/MainMenu.unity
+    path: Assets/VRQualityTesting/Scenes/MainMenu.unity
     guid: 11fef5af2f9d75c4e9f743ac5b4450fc
   - enabled: 1
-    path: Assets/VrQualityTesting/Scenes/ShooterSettings.unity
+    path: Assets/VRQualityTesting/Scenes/ShooterMenu.unity
     guid: 91c774bcc2d0b264f8991f7036b08149
   - enabled: 1
     path: Assets/VRQualityTesting/Scenes/Shooter.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/VRQualityTesting/Scenes/BoxSmasherMenu.unity
+    guid: b1697ba5ea2450545b01e5ec55af0c51
+  - enabled: 1
+    path: Assets/VRQualityTesting/Scenes/BoxSmasher.unity
+    guid: a2b237a7de5c53e47a71f6340ab0e38b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 26d7eac96e262114e97e1fcd24104c61,
       type: 2}

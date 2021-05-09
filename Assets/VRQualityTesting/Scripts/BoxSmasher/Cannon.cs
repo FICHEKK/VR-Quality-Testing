@@ -7,29 +7,29 @@ namespace VRQualityTesting.Scripts.BoxSmasher
         [SerializeField] private GameObject objectToShoot;
         [SerializeField] private Transform spawnPoint;
 
-        [SerializeField] private float minForceMultiplier;
-        [SerializeField] private float maxForceMultiplier;
-        [SerializeField] private float minTimeBetweenShots;
-        [SerializeField] private float maxTimeBetweenShots;
-        [SerializeField] private float minBoxSize;
-        [SerializeField] private float maxBoxSize;
+        public float MinShootForce { get; set; }
+        public float MaxShootForce { get; set; }
+        public float MinDurationBetweenShots { get; set; }
+        public float MaxDurationBetweenShots { get; set; }
+        public float MinBoxSize { get; set; }
+        public float MaxBoxSize { get; set; }
 
         private float _timeBetweenShots;
         private float _time;
 
         private void Awake()
         {
-            _timeBetweenShots = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+            _timeBetweenShots = Random.Range(MinDurationBetweenShots, MaxDurationBetweenShots);
         }
 
-        void Update()
+        private void Update()
         {
             _time += Time.deltaTime;
 
             if (_time > _timeBetweenShots)
             {
                 Shoot();
-                _timeBetweenShots = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+                _timeBetweenShots = Random.Range(MinDurationBetweenShots, MaxDurationBetweenShots);
                 _time = 0;
             }
         }
@@ -40,11 +40,11 @@ namespace VRQualityTesting.Scripts.BoxSmasher
             obj.transform.position = spawnPoint.position;
             obj.transform.rotation = Random.rotation;
 
-            var size = Random.Range(minBoxSize, maxBoxSize);
+            var size = Random.Range(MinBoxSize, MaxBoxSize);
             obj.transform.localScale = new Vector3(size, size, size);
 
             var rigidBody = obj.GetComponent<Rigidbody>();
-            rigidBody.AddForce(transform.up * Random.Range(minForceMultiplier, maxForceMultiplier), ForceMode.VelocityChange);
+            rigidBody.AddForce(transform.up * Random.Range(MinShootForce, MaxShootForce), ForceMode.VelocityChange);
         }
     }
 }

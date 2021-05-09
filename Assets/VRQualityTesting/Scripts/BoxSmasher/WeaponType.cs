@@ -4,7 +4,6 @@ namespace VRQualityTesting.Scripts.BoxSmasher
     {
         Katana,
         Hammer,
-        Knife,
-        Hand
+        Knife
     }
 }

@@ -37,10 +37,5 @@ namespace VRQualityTesting.Scripts.Utility
             public const string ShowBulletTrajectory = Prefix + "ShowBulletTrajectory";
             public const string ShowMuzzleFlash = Prefix + "ShowMuzzleFlash";
         }
-
-        public static class BoxSmasher
-        {
-            private const string Prefix = "BoxSmasher";
-        }
     }
 }
