@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using VRQualityTesting.Scripts.Core;
 
 namespace VRQualityTesting.Scripts.Shooter
 {

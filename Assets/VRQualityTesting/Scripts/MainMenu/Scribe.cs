@@ -1,6 +1,8 @@
+using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using VRQualityTesting.Scripts.Core;
 using VRQualityTesting.Scripts.Utility;
 
 namespace VRQualityTesting.Scripts.MainMenu
@@ -10,7 +12,6 @@ namespace VRQualityTesting.Scripts.MainMenu
         [SerializeField] private TMP_InputField studyIdField;
         [SerializeField] private TMP_InputField participantIdField;
         [SerializeField] private TMP_Dropdown gamePicker;
-        [SerializeField] private Router router;
 
         private void Awake() => InitializeSettings();
 
@@ -19,7 +20,7 @@ namespace VRQualityTesting.Scripts.MainMenu
             studyIdField.text = Settings.GetString(MainMenuKeys.StudyID);
             participantIdField.text = Settings.GetString(MainMenuKeys.ParticipantID);
 
-            gamePicker.options = router.GameTitleToSceneName.Keys.Select(gameTitle => new TMP_Dropdown.OptionData(gameTitle)).ToList();
+            gamePicker.options = Enum.GetNames(typeof(GameTitle)).Select(gameTitle => new TMP_Dropdown.OptionData(gameTitle)).ToList();
             gamePicker.value = Settings.GetInt(MainMenuKeys.SelectedGameIndex);
         }
 

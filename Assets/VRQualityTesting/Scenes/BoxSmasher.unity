@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 25
   ColliderRigidbody: {fileID: 0}
-  MinForce: 0
+  MinForce: 0.1
   LastRelativeVelocity: 0
   LastDamageForce: 0
   TakeCollisionDamage: 0
@@ -2839,7 +2839,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1337108901918474, guid: da41fd2967a439d409358c2214a5409e, type: 3}
       propertyPath: m_Name
-      value: Rock_3
+      value: Boulder
       objectReference: {fileID: 0}
     - target: {fileID: 4137486168269956, guid: da41fd2967a439d409358c2214a5409e, type: 3}
       propertyPath: m_RootOrder
@@ -2948,6 +2948,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5821838564357434137}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667261706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667261708}
+  - component: {fileID: 667261707}
+  m_Layer: 0
+  m_Name: Session Reporter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &667261707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667261706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cf991e44914ca5924fb374eb8d0c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &667261708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667261706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &694936164
 MonoBehaviour:
@@ -5221,7 +5264,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}
       propertyPath: m_Name
-      value: Rock_4
+      value: Boulder
       objectReference: {fileID: 0}
     - target: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}
       propertyPath: m_IsActive
@@ -6084,6 +6127,19 @@ MonoBehaviour:
   onTimerRunOut:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 667261707}
+        m_TargetAssemblyTypeName: VRQualityTesting.Scripts.BoxSmasher.SessionReporter,
+          Assembly-CSharp
+        m_MethodName: PublishReport
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1547661502}
         m_TargetAssemblyTypeName: VRQualityTesting.Scripts.Utility.SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
@@ -6108,7 +6164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547661502
 MonoBehaviour:
@@ -6573,7 +6629,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1256858306203008, guid: 93acc49b5a9f4e84b89aa62e0282a2a3, type: 3}
       propertyPath: m_Name
-      value: Environment_1
+      value: Desert Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4156798437703472, guid: 93acc49b5a9f4e84b89aa62e0282a2a3, type: 3}
       propertyPath: m_RootOrder
@@ -6957,7 +7013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1927833543
 PrefabInstance:
@@ -33443,7 +33499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 25
   ColliderRigidbody: {fileID: 0}
-  MinForce: 0
+  MinForce: 0.1
   LastRelativeVelocity: 0
   LastDamageForce: 0
   TakeCollisionDamage: 0

@@ -276,9 +276,13 @@
         <e p="VrQualityTesting" t="Include">
           <e p="Scripts" t="Include">
             <e p="BoxSmasher" t="Include">
+              <e p="Box.cs" t="Include" />
+              <e p="BoxResult.cs" t="Include" />
               <e p="Cannon.cs" t="Include" />
               <e p="CannonSpawner.cs" t="Include" />
               <e p="CannonSpawnerInitializer.cs" t="Include" />
+              <e p="Session.cs" t="Include" />
+              <e p="SessionReporter.cs" t="Include" />
               <e p="TimerInitializer.cs" t="Include" />
               <e p="WeaponInitializer.cs" t="Include" />
               <e p="WeaponType.cs" t="Include" />
@@ -286,6 +290,11 @@
             <e p="BoxSmasherMenu" t="Include">
               <e p="BoxSmasherKeys.cs" t="Include" />
               <e p="Scribe.cs" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="GameTitle.cs" t="Include" />
+              <e p="ISession.cs" t="Include" />
+              <e p="SessionPublisher.cs" t="Include" />
             </e>
             <e p="MainMenu" t="Include">
               <e p="Controller.cs" t="Include" />
@@ -298,7 +307,6 @@
               <e p="Initializer.cs" t="Include" />
               <e p="Projectile.cs" t="Include" />
               <e p="Session.cs" t="Include" />
-              <e p="SessionPublisher.cs" t="Include" />
               <e p="SessionReporter.cs" t="Include" />
               <e p="Target.cs" t="Include" />
               <e p="TargetHit.cs" t="Include" />
