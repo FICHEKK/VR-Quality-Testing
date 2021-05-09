@@ -16,18 +16,18 @@ namespace VRQualityTesting.Scripts.MainMenu
 
         private void InitializeSettings()
         {
-            studyIdField.text = Settings.GetString(SettingsKeys.MainMenu.StudyID);
-            participantIdField.text = Settings.GetString(SettingsKeys.MainMenu.ParticipantID);
+            studyIdField.text = Settings.GetString(MainMenuKeys.StudyID);
+            participantIdField.text = Settings.GetString(MainMenuKeys.ParticipantID);
 
             gamePicker.options = router.GameTitleToSceneName.Keys.Select(gameTitle => new TMP_Dropdown.OptionData(gameTitle)).ToList();
-            gamePicker.value = Settings.GetInt(SettingsKeys.MainMenu.SelectedGameIndex);
+            gamePicker.value = Settings.GetInt(MainMenuKeys.SelectedGameIndex);
         }
 
         public void SaveSettings()
         {
-            Settings.SetString(SettingsKeys.MainMenu.StudyID, studyIdField.text);
-            Settings.SetString(SettingsKeys.MainMenu.ParticipantID, participantIdField.text);
-            Settings.SetInt(SettingsKeys.MainMenu.SelectedGameIndex, gamePicker.value);
+            Settings.SetString(MainMenuKeys.StudyID, studyIdField.text);
+            Settings.SetString(MainMenuKeys.ParticipantID, participantIdField.text);
+            Settings.SetInt(MainMenuKeys.SelectedGameIndex, gamePicker.value);
         }
     }
 }

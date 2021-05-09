@@ -289,6 +289,7 @@
             </e>
             <e p="MainMenu" t="Include">
               <e p="Controller.cs" t="Include" />
+              <e p="MainMenuKeys.cs" t="Include" />
               <e p="Router.cs" t="Include" />
               <e p="Scribe.cs" t="Include" />
               <e p="Validator.cs" t="Include" />
@@ -306,11 +307,11 @@
             </e>
             <e p="ShooterMenu" t="Include">
               <e p="Scribe.cs" t="Include" />
+              <e p="ShooterKeys.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">
               <e p="SceneLoader.cs" t="Include" />
               <e p="Settings.cs" t="Include" />
-              <e p="SettingsKeys.cs" t="Include" />
               <e p="Tab.cs" t="Include" />
               <e p="TabGroup.cs" t="Include" />
               <e p="Timer.cs" t="Include" />
