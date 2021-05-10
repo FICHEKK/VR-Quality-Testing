@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.22886854, g: 0.420933, b: 0.7486693, a: 1}
+  m_IndirectSpecularColor: {r: 0.2288695, g: 0.4209354, b: 0.7486709, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6252,6 +6252,7 @@ MonoBehaviour:
   rifle: {fileID: 2324622598175796370}
   rifleLaser: {fileID: 973817699622623023}
   rifleRaycastWeapon: {fileID: 2324622598175796378}
+  bulletTrailRenderer: {fileID: 928183854}
 --- !u!4 &1201358836
 Transform:
   m_ObjectHideFlags: 0

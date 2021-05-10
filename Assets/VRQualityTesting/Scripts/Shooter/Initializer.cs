@@ -20,6 +20,9 @@ namespace VRQualityTesting.Scripts.Shooter
         [SerializeField] private GameObject rifleLaser;
         [SerializeField] private RaycastWeapon rifleRaycastWeapon;
 
+        [Header("Bullet")]
+        [SerializeField] private TrailRenderer bulletTrailRenderer;
+
         private void Awake()
         {
             InitializeWeapon();
@@ -46,6 +49,8 @@ namespace VRQualityTesting.Scripts.Shooter
                 pistolRaycastWeapon.MuzzleFlashObject = new GameObject();
                 rifleRaycastWeapon.MuzzleFlashObject = new GameObject();
             }
+
+            bulletTrailRenderer.time = Settings.GetFloat(ShooterKeys.BulletTrajectoryTime);
         }
 
         private void InitializeTimer()

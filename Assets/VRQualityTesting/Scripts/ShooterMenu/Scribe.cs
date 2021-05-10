@@ -28,6 +28,7 @@ namespace VRQualityTesting.Scripts.ShooterMenu
         [SerializeField] private Toggle useLaserToggle;
         [SerializeField] private Toggle showBulletTrajectoryToggle;
         [SerializeField] private Toggle showMuzzleFlashToggle;
+        [SerializeField] private TMP_InputField bulletTrajectoryTimeField;
 
         [SerializeField] private TMP_InputField roundDurationField;
 
@@ -69,6 +70,7 @@ namespace VRQualityTesting.Scripts.ShooterMenu
             useLaserToggle.isOn = Settings.GetBool(ShooterKeys.UseLaser, defaultValue: true);
             showBulletTrajectoryToggle.isOn = Settings.GetBool(ShooterKeys.ShowBulletTrajectory, defaultValue: true);
             showMuzzleFlashToggle.isOn = Settings.GetBool(ShooterKeys.ShowMuzzleFlash, defaultValue: true);
+            bulletTrajectoryTimeField.text = Settings.GetFloat(ShooterKeys.BulletTrajectoryTime, defaultValue: 0.05f).ToString(CultureInfo.InvariantCulture);
         }
 
         private void InitializeRoundSettings()
@@ -112,6 +114,7 @@ namespace VRQualityTesting.Scripts.ShooterMenu
             Settings.SetBool(ShooterKeys.UseLaser, useLaserToggle.isOn);
             Settings.SetBool(ShooterKeys.ShowBulletTrajectory, showBulletTrajectoryToggle.isOn);
             Settings.SetBool(ShooterKeys.ShowMuzzleFlash, showMuzzleFlashToggle.isOn);
+            Settings.SetFloat(ShooterKeys.BulletTrajectoryTime, float.Parse(bulletTrajectoryTimeField.text, CultureInfo.InvariantCulture));
         }
 
         private void SaveRoundSettings()

@@ -21,12 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Cannon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Cannon.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Prefabs/BoxSmasher/Cannon.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasher.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/CannonSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/CannonSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/ShooterMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/Scribe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/Scribe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/ShooterKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/ShooterKeys.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +92,7 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/MainMenuKeys.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Utility/SettingsKeys.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/Scribe.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/SessionPublisher.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/ShooterKeys.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/MainMenu/GameTitle.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Core/GameTitle.cs" />
@@ -115,6 +110,9 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/CannonSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Cannon.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/ShooterKeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Initializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/ShooterMenu/Scribe.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="130501000" />
+      <workItem from="1619891855887" duration="131724000" />
     </task>
     <servers />
   </component>

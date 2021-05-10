@@ -25,5 +25,6 @@ namespace VRQualityTesting.Scripts.ShooterMenu
         public const string UseLaser = Prefix + "UseLaser";
         public const string ShowBulletTrajectory = Prefix + "ShowBulletTrajectory";
         public const string ShowMuzzleFlash = Prefix + "ShowMuzzleFlash";
+        public const string BulletTrajectoryTime = Prefix + "BulletTrajectoryTime";
     }
 }
