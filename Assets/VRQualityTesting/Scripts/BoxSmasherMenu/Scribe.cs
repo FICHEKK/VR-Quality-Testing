@@ -39,7 +39,7 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
             spawnDistanceField.text = Settings.GetFloat(BoxSmasherKeys.SpawnDistance, defaultValue: 6f).ToString(CultureInfo.InvariantCulture);
             spawnAngleField.text = Settings.GetFloat(BoxSmasherKeys.SpawnAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
             spawnCountField.text = Settings.GetInt(BoxSmasherKeys.SpawnCount, defaultValue: 4).ToString(CultureInfo.InvariantCulture);
-            tiltAngleField.text = Settings.GetFloat(BoxSmasherKeys.TiltAngle, defaultValue: 45f).ToString(CultureInfo.InvariantCulture);
+            tiltAngleField.text = Settings.GetFloat(BoxSmasherKeys.TiltAngle, defaultValue: 35f).ToString(CultureInfo.InvariantCulture);
         }
 
         private void InitializeCannonSettings()

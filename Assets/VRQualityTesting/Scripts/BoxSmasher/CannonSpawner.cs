@@ -26,16 +26,12 @@ namespace VRQualityTesting.Scripts.BoxSmasher
                 var z = SpawnDistance * Mathf.Sin(angle);
 
                 var cannon = Instantiate(cannonPrefab, new Vector3(x, 2, z), Quaternion.identity);
+                cannon.transform.LookAt(new Vector3(0, 2, 0));
 
-                cannon.transform.LookAt(2 * cannon.transform.position);
+                var cannonComponent = cannon.GetComponent<Cannon>();
+                cannonComponent.Barrel.transform.Rotate(0, TiltAngle, 0);
 
-                var newRotation = cannon.transform.eulerAngles;
-                newRotation.x = -90;
-                cannon.transform.eulerAngles = newRotation;
-
-                cannon.transform.Rotate(TiltAngle, 0, 0);
-
-                InitializeCannon(cannon.GetComponent<Cannon>());
+                InitializeCannon(cannonComponent);
             }
         }
 
