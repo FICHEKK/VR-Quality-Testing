@@ -36,20 +36,20 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
 
         private void InitializeCannonSpawnerSettings()
         {
-            spawnDistanceField.text = Settings.GetFloat(BoxSmasherKeys.SpawnDistance, defaultValue: 6f).ToString(CultureInfo.InvariantCulture);
+            spawnDistanceField.text = Settings.GetFloat(BoxSmasherKeys.SpawnDistance, defaultValue: 1f).ToString(CultureInfo.InvariantCulture);
             spawnAngleField.text = Settings.GetFloat(BoxSmasherKeys.SpawnAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
             spawnCountField.text = Settings.GetInt(BoxSmasherKeys.SpawnCount, defaultValue: 4).ToString(CultureInfo.InvariantCulture);
-            tiltAngleField.text = Settings.GetFloat(BoxSmasherKeys.TiltAngle, defaultValue: 35f).ToString(CultureInfo.InvariantCulture);
+            tiltAngleField.text = Settings.GetFloat(BoxSmasherKeys.TiltAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
         }
 
         private void InitializeCannonSettings()
         {
-            minShootForceField.text = Settings.GetFloat(BoxSmasherKeys.MinShootForce, defaultValue: 8f).ToString(CultureInfo.InvariantCulture);
-            maxShootForceField.text = Settings.GetFloat(BoxSmasherKeys.MaxShootForce, defaultValue: 9f).ToString(CultureInfo.InvariantCulture);
+            minShootForceField.text = Settings.GetFloat(BoxSmasherKeys.MinShootForce, defaultValue: 6f).ToString(CultureInfo.InvariantCulture);
+            maxShootForceField.text = Settings.GetFloat(BoxSmasherKeys.MaxShootForce, defaultValue: 7f).ToString(CultureInfo.InvariantCulture);
             minDurationBetweenShotsField.text = Settings.GetFloat(BoxSmasherKeys.MinDurationBetweenShots, defaultValue: 3f).ToString(CultureInfo.InvariantCulture);
             maxDurationBetweenShotsField.text = Settings.GetFloat(BoxSmasherKeys.MaxDurationBetweenShots, defaultValue: 4f).ToString(CultureInfo.InvariantCulture);
             minBoxSizeField.text = Settings.GetFloat(BoxSmasherKeys.MinBoxSize, defaultValue: 0.3f).ToString(CultureInfo.InvariantCulture);
-            maxBoxSizeField.text = Settings.GetFloat(BoxSmasherKeys.MaxBoxSize, defaultValue: 0.5f).ToString(CultureInfo.InvariantCulture);
+            maxBoxSizeField.text = Settings.GetFloat(BoxSmasherKeys.MaxBoxSize, defaultValue: 0.4f).ToString(CultureInfo.InvariantCulture);
         }
 
         private void InitializeWeaponSettings()
