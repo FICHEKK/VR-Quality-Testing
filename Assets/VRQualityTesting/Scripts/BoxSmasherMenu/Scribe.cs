@@ -22,6 +22,8 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
 
         [SerializeField] private TMP_Dropdown leftHandWeaponTypeDropdown;
         [SerializeField] private TMP_Dropdown rightHandWeaponTypeDropdown;
+        [SerializeField] private TMP_InputField leftHandWeaponLengthField;
+        [SerializeField] private TMP_InputField rightHandWeaponLengthField;
 
         [SerializeField] private TMP_InputField roundDurationField;
 
@@ -58,6 +60,8 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
         {
             leftHandWeaponTypeDropdown.value = Settings.GetInt(BoxSmasherKeys.LeftHandWeaponType);
             rightHandWeaponTypeDropdown.value = Settings.GetInt(BoxSmasherKeys.RightHandWeaponType);
+            leftHandWeaponLengthField.text = Settings.GetFloat(BoxSmasherKeys.LeftHandWeaponLength, defaultValue: 1f).ToString(CultureInfo.InvariantCulture);
+            rightHandWeaponLengthField.text = Settings.GetFloat(BoxSmasherKeys.RightHandWeaponLength, defaultValue: 1f).ToString(CultureInfo.InvariantCulture);
         }
 
         private void InitializeRoundSettings()
@@ -96,6 +100,8 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
         {
             Settings.SetInt(BoxSmasherKeys.LeftHandWeaponType, leftHandWeaponTypeDropdown.value);
             Settings.SetInt(BoxSmasherKeys.RightHandWeaponType, rightHandWeaponTypeDropdown.value);
+            Settings.SetFloat(BoxSmasherKeys.LeftHandWeaponLength, float.Parse(leftHandWeaponLengthField.text, CultureInfo.InvariantCulture));
+            Settings.SetFloat(BoxSmasherKeys.RightHandWeaponLength, float.Parse(rightHandWeaponLengthField.text, CultureInfo.InvariantCulture));
         }
 
         private void SaveRoundSettings()

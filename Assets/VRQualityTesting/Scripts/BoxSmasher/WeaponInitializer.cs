@@ -24,10 +24,18 @@ namespace VRQualityTesting.Scripts.BoxSmasher
             leftHandKatana.GetComponent<WeaponHandSide>().HandSide = HandSide.Left;
             leftHandKatana.transform.position = leftHandGrabber.transform.position;
 
+            var leftHandKatanaScale = leftHandKatana.transform.localScale;
+            leftHandKatanaScale.y = Settings.GetFloat(BoxSmasherKeys.LeftHandWeaponLength);
+            leftHandKatana.transform.localScale = leftHandKatanaScale;
+
             var rightHandWeaponType = (WeaponType) Settings.GetInt(BoxSmasherKeys.RightHandWeaponType);
             rightHandKatana.SetActive(rightHandWeaponType == WeaponType.Katana);
             rightHandKatana.GetComponent<WeaponHandSide>().HandSide = HandSide.Right;
             rightHandKatana.transform.position = rightHandGrabber.transform.position;
+
+            var rightHandKatanaScale = rightHandKatana.transform.localScale;
+            rightHandKatanaScale.y = Settings.GetFloat(BoxSmasherKeys.RightHandWeaponLength);
+            rightHandKatana.transform.localScale = rightHandKatanaScale;
         }
     }
 }

@@ -19,6 +19,8 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
 
         public const string LeftHandWeaponType = Prefix + "LeftHandWeaponType";
         public const string RightHandWeaponType = Prefix + "RightHandWeaponType";
+        public const string LeftHandWeaponLength = Prefix + "LeftHandWeaponLength";
+        public const string RightHandWeaponLength = Prefix + "RightHandWeaponLength";
 
         public const string RoundDuration = Prefix + "RoundDuration";
     }

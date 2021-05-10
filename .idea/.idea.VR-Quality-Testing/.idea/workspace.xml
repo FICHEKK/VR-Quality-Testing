@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f249dbf6-6033-4360-9fca-5c944d6b3427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Quality-Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasher.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasherMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scenes/BoxSmasherMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/BoxResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/BoxResult.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Session.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Session.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/SessionReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/SessionReporter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponEventReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponEventReporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponHandSide.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Core/WeaponHandSide.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponHandSide.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Core/WeaponHandSide.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/BoxSmasherKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/BoxSmasherKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,15 +104,15 @@
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponStatisticsTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/WeaponEventReporter.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Shooter/Session.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/BoxSmasherKeys.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/CannonSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/CannonSpawnerInitializer.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/Core/WeaponHandSide.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/BoxResult.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponType.cs" />
-        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/SessionReporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/BoxSmasherKeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasherMenu/Scribe.cs" />
+        <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/WeaponInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/VRQualityTesting/Scripts/BoxSmasher/Session.cs" />
       </list>
     </option>
@@ -168,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619891821173</updated>
-      <workItem from="1619891855887" duration="146806000" />
+      <workItem from="1619891855887" duration="148318000" />
     </task>
     <servers />
   </component>

@@ -62,6 +62,8 @@ namespace VRQualityTesting.Scripts.BoxSmasher
                     $"{Environment.NewLine}# Weapon settings",
                     $"Left hand type: {(WeaponType) Settings.GetInt(BoxSmasherKeys.LeftHandWeaponType)}",
                     $"Right hand type: {(WeaponType) Settings.GetInt(BoxSmasherKeys.RightHandWeaponType)}",
+                    $"Left hand length: {Settings.GetFloat(BoxSmasherKeys.LeftHandWeaponLength).ToString(CultureInfo.InvariantCulture)}",
+                    $"Right hand length: {Settings.GetFloat(BoxSmasherKeys.RightHandWeaponLength).ToString(CultureInfo.InvariantCulture)}",
                 };
             }
         }
