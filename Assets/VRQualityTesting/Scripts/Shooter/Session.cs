@@ -11,7 +11,7 @@ namespace VRQualityTesting.Scripts.Shooter
 {
     public class Session : ISession
     {
-        private const string WeaponHitsInformationHeader = "Distance to target, Distance to center, Lifetime, Size, Velocity, Offset";
+        private const string WeaponHitsInformationHeader = "Distance to target, Distance to center, Lifetime, Size, Velocity, Offset, Hand side";
 
         public string StudyID => Settings.GetString(MainMenuKeys.StudyID);
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
@@ -58,6 +58,7 @@ namespace VRQualityTesting.Scripts.Shooter
             $"Use laser: {Settings.GetBool(ShooterKeys.UseLaser)}",
             $"Show bullet trajectory: {Settings.GetBool(ShooterKeys.ShowBulletTrajectory)}",
             $"Show muzzle flash: {Settings.GetBool(ShooterKeys.ShowMuzzleFlash)}",
+            $"Bullet trajectory time: {Settings.GetFloat(ShooterKeys.BulletTrajectoryTime).ToString(CultureInfo.InvariantCulture)}",
         };
 
         public List<string> DetailedInformation
@@ -70,7 +71,8 @@ namespace VRQualityTesting.Scripts.Shooter
                                                           $"{shot.TargetLifeDurationInMs.ToString(CultureInfo.InvariantCulture)}, " +
                                                           $"{shot.TargetSize.ToString(CultureInfo.InvariantCulture)}, " +
                                                           $"{shot.TargetVelocity.ToString(CultureInfo.InvariantCulture)}, " +
-                                                          $"{shot.TargetOffset.ToString(CultureInfo.InvariantCulture)}"));
+                                                          $"{shot.TargetOffset.ToString(CultureInfo.InvariantCulture)}, " +
+                                                          $"{shot.HandSide}"));
                 return detailedInformation;
             }
         }

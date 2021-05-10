@@ -5,35 +5,35 @@ using VRQualityTesting.Scripts.Core;
 
 namespace VRQualityTesting.Scripts.Shooter
 {
-    public class SessionReporter : MonoBehaviour
+    public class WeaponStatisticsTracker : MonoBehaviour
     {
         private const string TargetTag = "Target";
-
         [SerializeField] private TargetSpawner targetSpawner;
+
         private int _totalShotsFired;
         private readonly List<TargetHit> _targetHits = new List<TargetHit>();
 
-        public void OnWeaponShot() => _totalShotsFired++;
+        public void HandleBulletShot() => _totalShotsFired++;
 
-        public void OnWeaponHit(RaycastHit hit)
+        public void HandleBulletHit(RaycastHit hit, HandSide handSide)
         {
             if (!hit.transform.CompareTag(TargetTag)) return;
 
             var target = hit.transform.GetComponent<Target>();
-            AddTargetHit(hit.point, target);
+            LogTargetHit(hit.point, target, handSide);
         }
 
-        public void OnProjectileCollision(Collision collision)
+        public void HandleBulletCollision(Collision collision, HandSide handSide)
         {
             if (!collision.transform.CompareTag(TargetTag)) return;
 
             var hitPoint = collision.contacts[0].point;
             var target = collision.transform.GetComponent<Target>();
 
-            AddTargetHit(hitPoint, target);
+            LogTargetHit(hitPoint, target, handSide);
         }
 
-        private void AddTargetHit(Vector3 hitPoint, Target target)
+        private void LogTargetHit(Vector3 hitPoint, Target target, HandSide handSide)
         {
             var targetTransform = target.transform;
             var targetPosition = targetTransform.position;
@@ -44,12 +44,13 @@ namespace VRQualityTesting.Scripts.Shooter
                 targetLifeDurationInMs: (int) (DateTime.Now - target.BirthTimestamp).TotalMilliseconds,
                 targetSize: targetTransform.localScale.x,
                 targetVelocity: target.Velocity,
-                targetOffset: target.Offset
+                targetOffset: target.Offset,
+                handSide: handSide.ToString()
             ));
 
             targetSpawner.OnTargetHit();
         }
 
-        public void OnTimerRunOut() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));
+        public void PublishStatistics() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));
     }
 }

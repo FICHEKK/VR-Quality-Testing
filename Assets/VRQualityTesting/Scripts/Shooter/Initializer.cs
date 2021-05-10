@@ -1,5 +1,6 @@
 using BNG;
 using UnityEngine;
+using VRQualityTesting.Scripts.Core;
 using VRQualityTesting.Scripts.Utility;
 using VRQualityTesting.Scripts.ShooterMenu;
 
@@ -22,12 +23,18 @@ namespace VRQualityTesting.Scripts.Shooter
 
         [Header("Bullet")]
         [SerializeField] private TrailRenderer bulletTrailRenderer;
+        [SerializeField] private GameObject projectile;
+
+        [Header("VR Hands")]
+        [SerializeField] private Grabber leftHand;
+        [SerializeField] private Grabber rightHand;
 
         private void Awake()
         {
             InitializeWeapon();
             InitializeTimer();
             InitializeTargetSpawner();
+            InitializeHands();
         }
 
         private void InitializeWeapon()
@@ -75,6 +82,27 @@ namespace VRQualityTesting.Scripts.Shooter
             targetSpawner.MaxVelocity = Settings.GetFloat(ShooterKeys.MaxVelocity);
             targetSpawner.MinOffset = Settings.GetFloat(ShooterKeys.MinOffset);
             targetSpawner.MaxOffset = Settings.GetFloat(ShooterKeys.MaxOffset);
+        }
+
+        private void InitializeHands()
+        {
+            var weaponType = (WeaponType) Settings.GetInt(ShooterKeys.WeaponType);
+            var chosenWeaponPrefab = weaponType == WeaponType.Pistol ? pistol : rifle;
+
+            leftHand.EquipGrabbableOnStart = CreateWeapon(chosenWeaponPrefab, leftHand.transform.position, HandSide.Left).GetComponent<Grabbable>();
+            rightHand.EquipGrabbableOnStart = CreateWeapon(chosenWeaponPrefab, rightHand.transform.position, HandSide.Right).GetComponent<Grabbable>();
+        }
+
+        private GameObject CreateWeapon(GameObject weaponPrefab, Vector3 position, HandSide handSide)
+        {
+            var weaponProjectile = Instantiate(projectile);
+            weaponProjectile.GetComponent<WeaponHandSide>().HandSide = handSide;
+
+            var weapon = Instantiate(weaponPrefab, position, Quaternion.identity);
+            weapon.GetComponent<WeaponHandSide>().HandSide = handSide;
+            weapon.GetComponent<RaycastWeapon>().ProjectilePrefab = weaponProjectile;
+
+            return weapon;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace VRQualityTesting.Scripts.Shooter
         public float TargetSize { get; }
         public float TargetVelocity { get; }
         public float TargetOffset { get; }
+        public string HandSide { get; }
 
         public TargetHit(
             float distanceFromTarget,
@@ -15,7 +16,8 @@ namespace VRQualityTesting.Scripts.Shooter
             int targetLifeDurationInMs,
             float targetSize,
             float targetVelocity,
-            float targetOffset)
+            float targetOffset,
+            string handSide)
         {
             DistanceFromTarget = distanceFromTarget;
             DistanceFromHitToCenter = distanceFromHitToCenter;
@@ -23,6 +25,7 @@ namespace VRQualityTesting.Scripts.Shooter
             TargetSize = targetSize;
             TargetVelocity = targetVelocity;
             TargetOffset = targetOffset;
+            HandSide = handSide;
         }
     }
 }
