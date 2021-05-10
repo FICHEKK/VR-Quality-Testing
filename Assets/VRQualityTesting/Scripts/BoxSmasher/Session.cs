@@ -42,6 +42,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
 
                     $"{Environment.NewLine}# Cannon spawner settings",
                     $"Spawn distance: {Settings.GetFloat(BoxSmasherKeys.SpawnDistance).ToString(CultureInfo.InvariantCulture)}",
+                    $"Spawn height: {Settings.GetFloat(BoxSmasherKeys.SpawnHeight).ToString(CultureInfo.InvariantCulture)}",
                     $"Spawn angle: {Settings.GetFloat(BoxSmasherKeys.SpawnAngle).ToString(CultureInfo.InvariantCulture)}",
                     $"Spawn count: {Settings.GetInt(BoxSmasherKeys.SpawnCount).ToString(CultureInfo.InvariantCulture)}",
                     $"Tilt angle: {Settings.GetFloat(BoxSmasherKeys.TiltAngle).ToString(CultureInfo.InvariantCulture)}",

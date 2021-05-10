@@ -8,6 +8,7 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
     public class Scribe : MonoBehaviour
     {
         [SerializeField] private TMP_InputField spawnDistanceField;
+        [SerializeField] private TMP_InputField spawnHeightField;
         [SerializeField] private TMP_InputField spawnAngleField;
         [SerializeField] private TMP_InputField spawnCountField;
         [SerializeField] private TMP_InputField tiltAngleField;
@@ -37,6 +38,7 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
         private void InitializeCannonSpawnerSettings()
         {
             spawnDistanceField.text = Settings.GetFloat(BoxSmasherKeys.SpawnDistance, defaultValue: 1f).ToString(CultureInfo.InvariantCulture);
+            spawnHeightField.text = Settings.GetFloat(BoxSmasherKeys.SpawnHeight, defaultValue: 0f).ToString(CultureInfo.InvariantCulture);
             spawnAngleField.text = Settings.GetFloat(BoxSmasherKeys.SpawnAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
             spawnCountField.text = Settings.GetInt(BoxSmasherKeys.SpawnCount, defaultValue: 4).ToString(CultureInfo.InvariantCulture);
             tiltAngleField.text = Settings.GetFloat(BoxSmasherKeys.TiltAngle, defaultValue: 90f).ToString(CultureInfo.InvariantCulture);
@@ -74,6 +76,7 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
         private void SaveCannonSpawnerSettings()
         {
             Settings.SetFloat(BoxSmasherKeys.SpawnDistance, float.Parse(spawnDistanceField.text, CultureInfo.InvariantCulture));
+            Settings.SetFloat(BoxSmasherKeys.SpawnHeight, float.Parse(spawnHeightField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(BoxSmasherKeys.SpawnAngle, float.Parse(spawnAngleField.text, CultureInfo.InvariantCulture));
             Settings.SetInt(BoxSmasherKeys.SpawnCount, int.Parse(spawnCountField.text, CultureInfo.InvariantCulture));
             Settings.SetFloat(BoxSmasherKeys.TiltAngle, float.Parse(tiltAngleField.text, CultureInfo.InvariantCulture));

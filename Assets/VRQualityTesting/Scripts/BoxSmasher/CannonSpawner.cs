@@ -7,6 +7,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
     public class CannonSpawner : MonoBehaviour
     {
         public float SpawnDistance { get; set; }
+        public float SpawnHeight { get; set; }
         public float SpawnAngle { get; set; }
         public int SpawnCount { get; set; }
         public float TiltAngle { get; set; }
@@ -25,8 +26,8 @@ namespace VRQualityTesting.Scripts.BoxSmasher
                 var x = SpawnDistance * Mathf.Cos(angle);
                 var z = SpawnDistance * Mathf.Sin(angle);
 
-                var cannon = Instantiate(cannonPrefab, new Vector3(x, 0f, z), Quaternion.identity);
-                cannon.transform.LookAt(new Vector3(0, 0f, 0));
+                var cannon = Instantiate(cannonPrefab, new Vector3(x, SpawnHeight, z), Quaternion.identity);
+                cannon.transform.LookAt(new Vector3(0, SpawnHeight, 0));
 
                 var cannonComponent = cannon.GetComponent<Cannon>();
                 cannonComponent.Barrel.transform.Rotate(0, TiltAngle, 0);

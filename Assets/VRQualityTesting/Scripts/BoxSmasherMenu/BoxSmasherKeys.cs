@@ -5,6 +5,7 @@ namespace VRQualityTesting.Scripts.BoxSmasherMenu
         private const string Prefix = "BoxSmasher";
 
         public const string SpawnDistance = Prefix + "SpawnDistance";
+        public const string SpawnHeight = Prefix + "SpawnHeight";
         public const string SpawnAngle = Prefix + "SpawnAngle";
         public const string SpawnCount = Prefix + "SpawnCount";
         public const string TiltAngle = Prefix + "TiltAngle";

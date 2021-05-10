@@ -13,6 +13,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
         private void InitializeCannonSpawner()
         {
             cannonSpawner.SpawnDistance = Settings.GetFloat(BoxSmasherKeys.SpawnDistance);
+            cannonSpawner.SpawnHeight = Settings.GetFloat(BoxSmasherKeys.SpawnHeight);
             cannonSpawner.SpawnAngle = Settings.GetFloat(BoxSmasherKeys.SpawnAngle);
             cannonSpawner.SpawnCount = Settings.GetInt(BoxSmasherKeys.SpawnCount);
             cannonSpawner.TiltAngle = Settings.GetFloat(BoxSmasherKeys.TiltAngle);
