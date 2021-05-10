@@ -1,5 +1,6 @@
 using UnityEngine;
 using VRQualityTesting.Scripts.BoxSmasherMenu;
+using VRQualityTesting.Scripts.Core;
 using VRQualityTesting.Scripts.Utility;
 
 namespace VRQualityTesting.Scripts.BoxSmasher
@@ -8,13 +9,11 @@ namespace VRQualityTesting.Scripts.BoxSmasher
     {
         [Header("Left hand")]
         [SerializeField] private GameObject leftHandKatana;
-        [SerializeField] private GameObject leftHandHammer;
-        [SerializeField] private GameObject leftHandKnife;
+        [SerializeField] private GameObject leftHandGrabber;
 
         [Header("Right hand")]
         [SerializeField] private GameObject rightHandKatana;
-        [SerializeField] private GameObject rightHandHammer;
-        [SerializeField] private GameObject rightHandKnife;
+        [SerializeField] private GameObject rightHandGrabber;
 
         private void Awake() => InitializeWeapons();
 
@@ -22,13 +21,13 @@ namespace VRQualityTesting.Scripts.BoxSmasher
         {
             var leftHandWeaponType = (WeaponType) Settings.GetInt(BoxSmasherKeys.LeftHandWeaponType);
             leftHandKatana.SetActive(leftHandWeaponType == WeaponType.Katana);
-            leftHandHammer.SetActive(leftHandWeaponType == WeaponType.Hammer);
-            leftHandKnife.SetActive(leftHandWeaponType == WeaponType.Knife);
+            leftHandKatana.GetComponent<WeaponHandSide>().HandSide = HandSide.Left;
+            leftHandKatana.transform.position = leftHandGrabber.transform.position;
 
             var rightHandWeaponType = (WeaponType) Settings.GetInt(BoxSmasherKeys.RightHandWeaponType);
             rightHandKatana.SetActive(rightHandWeaponType == WeaponType.Katana);
-            rightHandHammer.SetActive(rightHandWeaponType == WeaponType.Hammer);
-            rightHandKnife.SetActive(rightHandWeaponType == WeaponType.Knife);
+            rightHandKatana.GetComponent<WeaponHandSide>().HandSide = HandSide.Right;
+            rightHandKatana.transform.position = rightHandGrabber.transform.position;
         }
     }
 }

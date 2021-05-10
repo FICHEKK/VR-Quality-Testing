@@ -296,6 +296,7 @@
               <e p="HandSide.cs" t="Include" />
               <e p="ISession.cs" t="Include" />
               <e p="SessionPublisher.cs" t="Include" />
+              <e p="WeaponHandSide.cs" t="Include" />
             </e>
             <e p="MainMenu" t="Include">
               <e p="Controller.cs" t="Include" />
@@ -312,7 +313,6 @@
               <e p="TargetHit.cs" t="Include" />
               <e p="TargetSpawner.cs" t="Include" />
               <e p="WeaponEventReporter.cs" t="Include" />
-              <e p="WeaponHandSide.cs" t="Include" />
               <e p="WeaponStatisticsTracker.cs" t="Include" />
               <e p="WeaponType.cs" t="Include" />
             </e>

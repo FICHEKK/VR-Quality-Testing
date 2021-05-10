@@ -13,10 +13,10 @@ namespace VRQualityTesting.Scripts.BoxSmasher
         public void OnBoxCollision(Box box, Collision collision)
         {
             var wasSmashed = collision.transform.CompareTag(WeaponTag);
-            var smashedBy = wasSmashed ? collision.gameObject.name : "-";
+            var handSide = wasSmashed ? collision.gameObject.GetComponent<WeaponHandSide>().HandSide : (HandSide?) null;
             var size = box.transform.localScale.x;
 
-            _boxResults.Add(new BoxResult(wasSmashed, smashedBy, size));
+            _boxResults.Add(new BoxResult(wasSmashed, handSide, size));
         }
 
         public void PublishReport() => SessionPublisher.Publish(new Session(_boxResults));

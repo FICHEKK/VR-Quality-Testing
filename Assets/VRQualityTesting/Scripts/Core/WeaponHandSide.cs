@@ -1,7 +1,6 @@
 using UnityEngine;
-using VRQualityTesting.Scripts.Core;
 
-namespace VRQualityTesting.Scripts.Shooter
+namespace VRQualityTesting.Scripts.Core
 {
     public class WeaponHandSide : MonoBehaviour
     {

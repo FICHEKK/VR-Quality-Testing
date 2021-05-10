@@ -6034,10 +6034,6 @@ MonoBehaviour:
     m_Options:
     - m_Text: Katana
       m_Image: {fileID: 0}
-    - m_Text: Hammer
-      m_Image: {fileID: 0}
-    - m_Text: Knife
-      m_Image: {fileID: 0}
     - m_Text: None
       m_Image: {fileID: 0}
   m_OnValueChanged:
@@ -7102,10 +7098,6 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Katana
-      m_Image: {fileID: 0}
-    - m_Text: Hammer
-      m_Image: {fileID: 0}
-    - m_Text: Knife
       m_Image: {fileID: 0}
     - m_Text: None
       m_Image: {fileID: 0}

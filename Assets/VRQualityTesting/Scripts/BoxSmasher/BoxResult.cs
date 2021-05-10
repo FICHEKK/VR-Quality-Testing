@@ -1,15 +1,17 @@
+using VRQualityTesting.Scripts.Core;
+
 namespace VRQualityTesting.Scripts.BoxSmasher
 {
     public class BoxResult
     {
         public bool WasSmashed { get; }
-        public string SmashedBy { get; }
+        public HandSide? HandSide { get; }
         public float Size { get; }
 
-        public BoxResult(bool wasSmashed, string smashedBy, float size)
+        public BoxResult(bool wasSmashed, HandSide? handSide, float size)
         {
             WasSmashed = wasSmashed;
-            SmashedBy = smashedBy;
+            HandSide = handSide;
             Size = size;
         }
     }

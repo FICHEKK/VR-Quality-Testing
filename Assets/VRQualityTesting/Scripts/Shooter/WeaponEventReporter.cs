@@ -1,4 +1,5 @@
 using UnityEngine;
+using VRQualityTesting.Scripts.Core;
 
 namespace VRQualityTesting.Scripts.Shooter
 {

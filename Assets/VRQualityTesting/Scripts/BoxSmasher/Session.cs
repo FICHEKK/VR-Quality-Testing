@@ -11,7 +11,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
 {
     public class Session : ISession
     {
-        private const string BoxResultsHeader = "Was smashed, Smashed by, Box size";
+        private const string BoxResultsHeader = "Was smashed, Hand side, Box size";
 
         public string StudyID => Settings.GetString(MainMenuKeys.StudyID);
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
@@ -30,12 +30,16 @@ namespace VRQualityTesting.Scripts.BoxSmasher
             {
                 var totalBoxes = _boxResults.Count;
                 var hits = _boxResults.Count(box => box.WasSmashed);
+                var hitsByRightHand = _boxResults.Count(box => box.HandSide == HandSide.Right);
+                var hitsByLeftHand = hits - hitsByRightHand;
 
                 return new List<string>
                 {
                     "# Round results",
                     $"Total boxes: {totalBoxes}",
                     $"Hits: {hits}",
+                    $"Hits by right hand: {hitsByRightHand}",
+                    $"Hits by left hand: {hitsByLeftHand}",
                     $"Misses: {totalBoxes - hits}",
                     $"Accuracy: {((float) hits / totalBoxes).ToString(CultureInfo.InvariantCulture)}",
                     $"Duration: {Settings.GetFloat(BoxSmasherKeys.RoundDuration).ToString(CultureInfo.InvariantCulture)}",
@@ -68,7 +72,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
             {
                 var detailedInformation = new List<string> {BoxResultsHeader};
                 detailedInformation.AddRange(_boxResults.Select(box => $"{box.WasSmashed}, " +
-                                                                       $"{box.SmashedBy}, " +
+                                                                       $"{(box.HandSide.HasValue ? box.HandSide.Value.ToString() : "-")}, " +
                                                                        $"{box.Size.ToString(CultureInfo.InvariantCulture)}"));
                 return detailedInformation;
             }
