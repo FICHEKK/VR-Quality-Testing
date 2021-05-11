@@ -45,7 +45,7 @@ namespace VRQualityTesting.Scripts.Shooter
                 targetSize: targetTransform.localScale.x,
                 targetVelocity: target.Velocity,
                 targetOffset: target.Offset,
-                handSide: handSide.ToString()
+                handSide: handSide
             ));
 
             targetSpawner.OnTargetHit();

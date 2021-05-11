@@ -1,3 +1,5 @@
+using VRQualityTesting.Scripts.Core;
+
 namespace VRQualityTesting.Scripts.Shooter
 {
     public class TargetHit
@@ -8,7 +10,7 @@ namespace VRQualityTesting.Scripts.Shooter
         public float TargetSize { get; }
         public float TargetVelocity { get; }
         public float TargetOffset { get; }
-        public string HandSide { get; }
+        public HandSide HandSide { get; }
 
         public TargetHit(
             float distanceFromTarget,
@@ -17,7 +19,7 @@ namespace VRQualityTesting.Scripts.Shooter
             float targetSize,
             float targetVelocity,
             float targetOffset,
-            string handSide)
+            HandSide handSide)
         {
             DistanceFromTarget = distanceFromTarget;
             DistanceFromHitToCenter = distanceFromHitToCenter;

@@ -26,40 +26,52 @@ namespace VRQualityTesting.Scripts.Shooter
             _hits = hits;
         }
 
-        public List<string> GeneralInformation => new List<string>
+        public List<string> GeneralInformation
         {
-            "# Round results",
-            $"Total shots fired: {_totalShotsFired}",
-            $"Hits: {_hits.Count}",
-            $"Misses: {_totalShotsFired - _hits.Count}",
-            $"Accuracy: {((float) _hits.Count / _totalShotsFired).ToString(CultureInfo.InvariantCulture)}",
-            $"Duration: {Settings.GetFloat(ShooterKeys.RoundDuration).ToString(CultureInfo.InvariantCulture)}",
+            get
+            {
+                var hits = _hits.Count;
+                var hitsByRightHand = _hits.Count(hit => hit.HandSide == HandSide.Right);
+                var hitsByLeftHand = hits - hitsByRightHand;
 
-            $"{Environment.NewLine}# Target spawner settings",
-            $"Min distance: {Settings.GetFloat(ShooterKeys.MinDistance).ToString(CultureInfo.InvariantCulture)}",
-            $"Max distance: {Settings.GetFloat(ShooterKeys.MaxDistance).ToString(CultureInfo.InvariantCulture)}",
-            $"Min height: {Settings.GetFloat(ShooterKeys.MinHeight).ToString(CultureInfo.InvariantCulture)}",
-            $"Max height: {Settings.GetFloat(ShooterKeys.MaxHeight).ToString(CultureInfo.InvariantCulture)}",
-            $"Spawn angle: {Settings.GetFloat(ShooterKeys.SpawnAngle).ToString(CultureInfo.InvariantCulture)}",
-            $"Spawn count: {Settings.GetInt(ShooterKeys.SpawnCount).ToString(CultureInfo.InvariantCulture)}",
-            $"Duration between spawns: {Settings.GetFloat(ShooterKeys.DurationBetweenSpawns).ToString(CultureInfo.InvariantCulture)}",
+                return new List<string>
+                {
+                    "# Round results",
+                    $"Total shots fired: {_totalShotsFired}",
+                    $"Hits: {hits}",
+                    $"Hits by right hand: {hitsByRightHand}",
+                    $"Hits by left hand: {hitsByLeftHand}",
+                    $"Misses: {_totalShotsFired - hits}",
+                    $"Accuracy: {((float) hits / _totalShotsFired).ToString(CultureInfo.InvariantCulture)}",
+                    $"Duration: {Settings.GetFloat(ShooterKeys.RoundDuration).ToString(CultureInfo.InvariantCulture)}",
 
-            $"{Environment.NewLine}# Target settings",
-            $"Min size: {Settings.GetFloat(ShooterKeys.MinSize).ToString(CultureInfo.InvariantCulture)}",
-            $"Max size: {Settings.GetFloat(ShooterKeys.MaxSize).ToString(CultureInfo.InvariantCulture)}",
-            $"Moving probability: {Settings.GetFloat(ShooterKeys.MovingProbability).ToString(CultureInfo.InvariantCulture)}",
-            $"Min velocity: {Settings.GetFloat(ShooterKeys.MinVelocity).ToString(CultureInfo.InvariantCulture)}",
-            $"Max velocity: {Settings.GetFloat(ShooterKeys.MaxVelocity).ToString(CultureInfo.InvariantCulture)}",
-            $"Min offset: {Settings.GetFloat(ShooterKeys.MinOffset).ToString(CultureInfo.InvariantCulture)}",
-            $"Max offset: {Settings.GetFloat(ShooterKeys.MaxOffset).ToString(CultureInfo.InvariantCulture)}",
+                    $"{Environment.NewLine}# Target spawner settings",
+                    $"Min distance: {Settings.GetFloat(ShooterKeys.MinDistance).ToString(CultureInfo.InvariantCulture)}",
+                    $"Max distance: {Settings.GetFloat(ShooterKeys.MaxDistance).ToString(CultureInfo.InvariantCulture)}",
+                    $"Min height: {Settings.GetFloat(ShooterKeys.MinHeight).ToString(CultureInfo.InvariantCulture)}",
+                    $"Max height: {Settings.GetFloat(ShooterKeys.MaxHeight).ToString(CultureInfo.InvariantCulture)}",
+                    $"Spawn angle: {Settings.GetFloat(ShooterKeys.SpawnAngle).ToString(CultureInfo.InvariantCulture)}",
+                    $"Spawn count: {Settings.GetInt(ShooterKeys.SpawnCount).ToString(CultureInfo.InvariantCulture)}",
+                    $"Duration between spawns: {Settings.GetFloat(ShooterKeys.DurationBetweenSpawns).ToString(CultureInfo.InvariantCulture)}",
 
-            $"{Environment.NewLine}# Weapon settings",
-            $"Type: {(WeaponType) Settings.GetInt(ShooterKeys.WeaponType)}",
-            $"Use laser: {Settings.GetBool(ShooterKeys.UseLaser)}",
-            $"Show bullet trajectory: {Settings.GetBool(ShooterKeys.ShowBulletTrajectory)}",
-            $"Show muzzle flash: {Settings.GetBool(ShooterKeys.ShowMuzzleFlash)}",
-            $"Bullet trajectory time: {Settings.GetFloat(ShooterKeys.BulletTrajectoryTime).ToString(CultureInfo.InvariantCulture)}",
-        };
+                    $"{Environment.NewLine}# Target settings",
+                    $"Min size: {Settings.GetFloat(ShooterKeys.MinSize).ToString(CultureInfo.InvariantCulture)}",
+                    $"Max size: {Settings.GetFloat(ShooterKeys.MaxSize).ToString(CultureInfo.InvariantCulture)}",
+                    $"Moving probability: {Settings.GetFloat(ShooterKeys.MovingProbability).ToString(CultureInfo.InvariantCulture)}",
+                    $"Min velocity: {Settings.GetFloat(ShooterKeys.MinVelocity).ToString(CultureInfo.InvariantCulture)}",
+                    $"Max velocity: {Settings.GetFloat(ShooterKeys.MaxVelocity).ToString(CultureInfo.InvariantCulture)}",
+                    $"Min offset: {Settings.GetFloat(ShooterKeys.MinOffset).ToString(CultureInfo.InvariantCulture)}",
+                    $"Max offset: {Settings.GetFloat(ShooterKeys.MaxOffset).ToString(CultureInfo.InvariantCulture)}",
+
+                    $"{Environment.NewLine}# Weapon settings",
+                    $"Type: {(WeaponType) Settings.GetInt(ShooterKeys.WeaponType)}",
+                    $"Use laser: {Settings.GetBool(ShooterKeys.UseLaser)}",
+                    $"Show bullet trajectory: {Settings.GetBool(ShooterKeys.ShowBulletTrajectory)}",
+                    $"Show muzzle flash: {Settings.GetBool(ShooterKeys.ShowMuzzleFlash)}",
+                    $"Bullet trajectory time: {Settings.GetFloat(ShooterKeys.BulletTrajectoryTime).ToString(CultureInfo.InvariantCulture)}",
+                };
+            }
+        }
 
         public List<string> DetailedInformation
         {

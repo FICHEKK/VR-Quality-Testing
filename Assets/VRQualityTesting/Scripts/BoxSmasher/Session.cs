@@ -11,7 +11,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
 {
     public class Session : ISession
     {
-        private const string BoxResultsHeader = "Was smashed, Hand side, Box size, Lifetime (ms)";
+        private const string BoxResultsHeader = "Was smashed, Hand side, Box size, Lifetime";
 
         public string StudyID => Settings.GetString(MainMenuKeys.StudyID);
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
