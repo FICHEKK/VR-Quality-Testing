@@ -11,7 +11,7 @@ namespace VRQualityTesting.Scripts.BoxSmasher
 {
     public class Session : ISession
     {
-        private const string BoxResultsHeader = "Was smashed, Hand side, Box size";
+        private const string BoxResultsHeader = "Was smashed, Hand side, Box size, Lifetime (ms)";
 
         public string StudyID => Settings.GetString(MainMenuKeys.StudyID);
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
@@ -75,7 +75,8 @@ namespace VRQualityTesting.Scripts.BoxSmasher
                 var detailedInformation = new List<string> {BoxResultsHeader};
                 detailedInformation.AddRange(_boxResults.Select(box => $"{box.WasSmashed}, " +
                                                                        $"{(box.HandSide.HasValue ? box.HandSide.Value.ToString() : "-")}, " +
-                                                                       $"{box.Size.ToString(CultureInfo.InvariantCulture)}"));
+                                                                       $"{box.Size.ToString(CultureInfo.InvariantCulture)}, " +
+                                                                       $"{box.LifetimeInMs}"));
                 return detailedInformation;
             }
         }

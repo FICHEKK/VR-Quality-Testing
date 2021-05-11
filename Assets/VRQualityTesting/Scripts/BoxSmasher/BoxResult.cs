@@ -7,12 +7,14 @@ namespace VRQualityTesting.Scripts.BoxSmasher
         public bool WasSmashed { get; }
         public HandSide? HandSide { get; }
         public float Size { get; }
+        public int LifetimeInMs { get; }
 
-        public BoxResult(bool wasSmashed, HandSide? handSide, float size)
+        public BoxResult(bool wasSmashed, HandSide? handSide, float size, int lifetimeInMs)
         {
             WasSmashed = wasSmashed;
             HandSide = handSide;
             Size = size;
+            LifetimeInMs = lifetimeInMs;
         }
     }
 }
