@@ -4,6 +4,6 @@ namespace VRQualityTesting.Scripts.Core
 {
     public class WeaponHandSide : MonoBehaviour
     {
-        public HandSide HandSide { get; set; }
+        public HandSide HandSide;
     }
 }

@@ -95,7 +95,8 @@ namespace VRQualityTesting.Scripts.Shooter
 
         private GameObject CreateWeapon(GameObject weaponPrefab, Vector3 position, HandSide handSide)
         {
-            var weaponProjectile = Instantiate(projectile);
+            var weaponProjectilePosition = handSide == HandSide.Right ? new Vector3(1000, -1000, 0) : new Vector3(-1000, -1000, 0);
+            var weaponProjectile = Instantiate(projectile, weaponProjectilePosition, Quaternion.identity);
             weaponProjectile.GetComponent<WeaponHandSide>().HandSide = handSide;
 
             var weapon = Instantiate(weaponPrefab, position, Quaternion.identity);

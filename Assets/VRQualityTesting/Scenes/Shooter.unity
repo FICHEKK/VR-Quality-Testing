@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2288695, g: 0.4209354, b: 0.7486709, a: 1}
+  m_IndirectSpecularColor: {r: 0.22886854, g: 0.420933, b: 0.7486693, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 66384250}
   - component: {fileID: 66384252}
   - component: {fileID: 66384251}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Bullet (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 155910977}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MuzzlePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 193665524}
   - component: {fileID: 193665526}
   - component: {fileID: 193665525}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 339535886}
   - component: {fileID: 339535888}
   - component: {fileID: 339535887}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 404785460}
   - component: {fileID: 404785462}
   - component: {fileID: 404785461}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ChamberedBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 516357337}
   - component: {fileID: 516357336}
   - component: {fileID: 516357335}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2000,7 +2000,7 @@ GameObject:
   - component: {fileID: 529455938}
   - component: {fileID: 529455940}
   - component: {fileID: 529455939}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: LaserEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 532277724}
   - component: {fileID: 532277726}
   - component: {fileID: 532277725}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2162,7 +2162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536548474}
   - component: {fileID: 536548475}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2255,7 +2255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553613008}
   - component: {fileID: 553613009}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2427,7 @@ GameObject:
   - component: {fileID: 607474557}
   - component: {fileID: 607474559}
   - component: {fileID: 607474558}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Body_Advance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 638599163}
   - component: {fileID: 638599165}
   - component: {fileID: 638599164}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2807,7 +2807,7 @@ GameObject:
   - component: {fileID: 666317774}
   - component: {fileID: 666317776}
   - component: {fileID: 666317775}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2888,7 +2888,7 @@ GameObject:
   - component: {fileID: 669031596}
   - component: {fileID: 669031598}
   - component: {fileID: 669031597}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Magazine_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 697232064}
   - component: {fileID: 697232066}
   - component: {fileID: 697232065}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3224,7 +3224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710185587}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: EjectPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3254,7 +3254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718512745}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ForwardFlash 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3464,7 +3464,7 @@ GameObject:
   - component: {fileID: 767957205}
   - component: {fileID: 767957204}
   - component: {fileID: 767957203}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3556,7 +3556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774782848}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ForwardFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3779,7 +3779,7 @@ GameObject:
   - component: {fileID: 828380131}
   - component: {fileID: 828380133}
   - component: {fileID: 828380132}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipRelease
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +3867,7 @@ GameObject:
   - component: {fileID: 857299765}
   - component: {fileID: 857299767}
   - component: {fileID: 857299766}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3946,7 +3946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 867118894}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4001,7 +4001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 885328872}
   - component: {fileID: 885328873}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4101,7 +4101,7 @@ GameObject:
   - component: {fileID: 911252759}
   - component: {fileID: 911252761}
   - component: {fileID: 911252760}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4410,6 +4410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1269a2e132f24ef8b14c9a37fd1287d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandSide: 0
 --- !u!1 &929871663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,7 +4638,7 @@ GameObject:
   - component: {fileID: 953890503}
   - component: {fileID: 953890505}
   - component: {fileID: 953890504}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_magazine_release
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4724,7 +4725,7 @@ GameObject:
   - component: {fileID: 970304703}
   - component: {fileID: 970304705}
   - component: {fileID: 970304704}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4820,7 @@ GameObject:
   - component: {fileID: 993423832}
   - component: {fileID: 993423831}
   - component: {fileID: 993423830}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +4941,7 @@ GameObject:
   - component: {fileID: 1035271787}
   - component: {fileID: 1035271789}
   - component: {fileID: 1035271788}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5019,7 +5020,7 @@ GameObject:
   - component: {fileID: 1036737093}
   - component: {fileID: 1036737095}
   - component: {fileID: 1036737094}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5175,7 +5176,7 @@ GameObject:
   - component: {fileID: 1048794709}
   - component: {fileID: 1048794711}
   - component: {fileID: 1048794710}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: RedDotLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5369,7 +5370,7 @@ GameObject:
   - component: {fileID: 1067287275}
   - component: {fileID: 1067287277}
   - component: {fileID: 1067287276}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipRelease (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5615,7 +5616,7 @@ GameObject:
   - component: {fileID: 1197285294}
   - component: {fileID: 1197285307}
   - component: {fileID: 1197285308}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5673,7 +5674,7 @@ MonoBehaviour:
   RemoteGrabDistance: 2.5
   ThrowForceMultiplier: 2.5
   ThrowForceMultiplierAngular: 1.5
-  BreakDistance: 1
+  BreakDistance: 0
   HideHandGraphics: 1
   ParentToHands: 1
   ParentHandModel: 1
@@ -5974,7 +5975,7 @@ MonoBehaviour:
   MuzzleFlashObject: {fileID: 1869129804}
   BulletCasingPrefab: {fileID: 4293907302815737054, guid: f8313a7c0e07bba40ac0f3634a590caf,
     type: 3}
-  ProjectilePrefab: {fileID: 928183850}
+  ProjectilePrefab: {fileID: 0}
   HitFXPrefab: {fileID: 0}
   GunShotSound: {fileID: 8300000, guid: 727ff3abbdb797f45b714a1795efc4e2, type: 3}
   GunShotVolume: 0.75
@@ -6148,6 +6149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1269a2e132f24ef8b14c9a37fd1287d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandSide: 0
 --- !u!114 &1197285308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6229,7 +6231,7 @@ GameObject:
   - component: {fileID: 1249629133}
   - component: {fileID: 1249629132}
   - component: {fileID: 1249629131}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6509,7 +6511,7 @@ GameObject:
   - component: {fileID: 1299718774}
   - component: {fileID: 1299718773}
   - component: {fileID: 1299718772}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: RingHelper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6849,6 +6851,10 @@ PrefabInstance:
       value: Rock_4
       objectReference: {fileID: 0}
     - target: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -6927,7 +6933,7 @@ GameObject:
   - component: {fileID: 1361276125}
   - component: {fileID: 1361276127}
   - component: {fileID: 1361276126}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7270,7 +7276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412513814}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MainFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7371,7 +7377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453101109}
   - component: {fileID: 1453101110}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7465,7 +7471,7 @@ GameObject:
   - component: {fileID: 1456942748}
   - component: {fileID: 1456942750}
   - component: {fileID: 1456942749}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GrabArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7530,7 +7536,7 @@ GameObject:
   - component: {fileID: 1475104878}
   - component: {fileID: 1475104880}
   - component: {fileID: 1475104879}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide_Advance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7612,7 +7618,7 @@ GameObject:
   - component: {fileID: 1478821041}
   - component: {fileID: 1478821040}
   - component: {fileID: 1478821039}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7770,7 +7776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499984158}
   - component: {fileID: 1499984159}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7864,7 +7870,7 @@ GameObject:
   - component: {fileID: 1510451942}
   - component: {fileID: 1510451944}
   - component: {fileID: 1510451943}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: SecondHandTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7932,7 +7938,7 @@ GameObject:
   - component: {fileID: 1519837380}
   - component: {fileID: 1519837382}
   - component: {fileID: 1519837381}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8307,7 +8313,7 @@ GameObject:
   - component: {fileID: 1595877933}
   - component: {fileID: 1595877935}
   - component: {fileID: 1595877934}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8527,7 +8533,7 @@ GameObject:
   - component: {fileID: 1628529690}
   - component: {fileID: 1628529692}
   - component: {fileID: 1628529691}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8613,7 +8619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1648254436}
   - component: {fileID: 1648254437}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GrabPoint Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8695,7 +8701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1683876512}
   - component: {fileID: 1683876511}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GripTransformRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8882,7 +8888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1728740611}
   - component: {fileID: 1728740612}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GripTransformLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9162,7 +9168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1869129805}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9196,7 +9202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902492894}
   - component: {fileID: 1902492895}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GrabPoint Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9315,7 +9321,7 @@ GameObject:
   - component: {fileID: 2020583022}
   - component: {fileID: 2020583024}
   - component: {fileID: 2020583023}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9402,7 +9408,7 @@ GameObject:
   - component: {fileID: 2023089994}
   - component: {fileID: 2023089996}
   - component: {fileID: 2023089995}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipInsert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17139,7 +17145,7 @@ GameObject:
   - component: {fileID: 538656485550935800}
   - component: {fileID: 2396729976710685870}
   - component: {fileID: 9191667859785126111}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17434,7 +17440,7 @@ GameObject:
   - component: {fileID: 8419031061397166571}
   - component: {fileID: 8531527150496397009}
   - component: {fileID: 1894832882269265204}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: RedDotLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25706,7 +25712,7 @@ GameObject:
   - component: {fileID: 1889505403122466342}
   - component: {fileID: 1791737418462675700}
   - component: {fileID: 9086358106929356552}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: RingHelper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29771,7 +29777,7 @@ GameObject:
   - component: {fileID: 2324622596975374233}
   - component: {fileID: 2324622596975374247}
   - component: {fileID: 2324622596975374246}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29915,7 +29921,7 @@ GameObject:
   - component: {fileID: 2324622597028494826}
   - component: {fileID: 2324622597028494824}
   - component: {fileID: 2324622597028494827}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29948,7 +29954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622597044037652}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29966,7 +29972,7 @@ GameObject:
   - component: {fileID: 2324622597071750585}
   - component: {fileID: 2324622597071750727}
   - component: {fileID: 2324622597071750726}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Magazine_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30047,7 +30053,7 @@ GameObject:
   - component: {fileID: 2324622597080513689}
   - component: {fileID: 2324622597080513703}
   - component: {fileID: 2324622597080513702}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30191,7 +30197,7 @@ GameObject:
   - component: {fileID: 2324622597091876876}
   - component: {fileID: 2324622597091876874}
   - component: {fileID: 2324622597091876877}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30209,7 +30215,7 @@ GameObject:
   - component: {fileID: 2324622597108184393}
   - component: {fileID: 2324622597108184407}
   - component: {fileID: 2324622597108184406}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Ejector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30339,7 +30345,7 @@ GameObject:
   - component: {fileID: 2324622597145851701}
   - component: {fileID: 2324622597145851699}
   - component: {fileID: 2324622597145851698}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30432,7 +30438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622597154773227}
   - component: {fileID: 2324622597154773224}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30462,7 +30468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622597408166255}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ForwardFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30496,7 +30502,7 @@ GameObject:
   - component: {fileID: 2324622597419242417}
   - component: {fileID: 2324622597419242431}
   - component: {fileID: 2324622597419242430}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GrabArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30584,7 +30590,7 @@ GameObject:
   - component: {fileID: 2324622597438358543}
   - component: {fileID: 2324622597438358542}
   - component: {fileID: 2324622597438358529}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30651,7 +30657,7 @@ GameObject:
   - component: {fileID: 2324622597456500070}
   - component: {fileID: 2324622597456500068}
   - component: {fileID: 2324622597456500071}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Bullet (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30781,7 +30787,7 @@ GameObject:
   - component: {fileID: 2324622597466150887}
   - component: {fileID: 2324622597466150885}
   - component: {fileID: 2324622597466150884}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30876,7 +30882,7 @@ GameObject:
   - component: {fileID: 2324622597505083978}
   - component: {fileID: 2324622597505083976}
   - component: {fileID: 2324622597505083979}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30892,7 +30898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622597515883750}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30932,7 +30938,7 @@ GameObject:
   - component: {fileID: 2324622597622831377}
   - component: {fileID: 2324622597622831391}
   - component: {fileID: 2324622597622831390}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipRelease (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31012,7 +31018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622597719888769}
   - component: {fileID: 2324622597719888782}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31056,7 +31062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622597963092319}
   - component: {fileID: 8137057689579695453}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GripTransform Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31163,7 +31169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622597977296700}
   - component: {fileID: 2324622597977296701}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31242,7 +31248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622597997409035}
   - component: {fileID: 2324622597997409032}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31291,7 +31297,7 @@ GameObject:
   - component: {fileID: 2324622598024157544}
   - component: {fileID: 2647842509805737716}
   - component: {fileID: 2647842509805737717}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31358,7 +31364,7 @@ GameObject:
   - component: {fileID: 2324622598026290749}
   - component: {fileID: 2324622598026290747}
   - component: {fileID: 2324622598026290746}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Iron_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31404,7 +31410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622598071247708}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ForwardFlash 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31471,7 +31477,7 @@ GameObject:
   - component: {fileID: 2324622598141152221}
   - component: {fileID: 2324622598141152219}
   - component: {fileID: 2324622598141152218}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31508,7 +31514,7 @@ GameObject:
   - component: {fileID: 2324622598148688989}
   - component: {fileID: 2324622598148688988}
   - component: {fileID: 2324622598148688991}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31912,7 +31918,7 @@ GameObject:
   - component: {fileID: 520882071121437749}
   - component: {fileID: 2324622598175796372}
   - component: {fileID: 2324622598175796373}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31944,6 +31950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1269a2e132f24ef8b14c9a37fd1287d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandSide: 0
 --- !u!114 &2324622598175796373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31980,7 +31987,7 @@ MonoBehaviour:
   RemoteGrabDistance: 2.5
   ThrowForceMultiplier: 2.5
   ThrowForceMultiplierAngular: 1.5
-  BreakDistance: 1
+  BreakDistance: 0
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 1
@@ -32084,7 +32091,7 @@ MonoBehaviour:
   MuzzleFlashObject: {fileID: 2324622597044037655}
   BulletCasingPrefab: {fileID: 1282233564399203881, guid: e6d6d8266008ffe438ce58f774e874fa,
     type: 3}
-  ProjectilePrefab: {fileID: 928183850}
+  ProjectilePrefab: {fileID: 0}
   HitFXPrefab: {fileID: 0}
   GunShotSound: {fileID: 8300000, guid: 6b23ba5ed1da95140b52f6863122d72b, type: 3}
   GunShotVolume: 0.75
@@ -32371,7 +32378,7 @@ GameObject:
   - component: {fileID: 2324622598199760757}
   - component: {fileID: 2324622598199760755}
   - component: {fileID: 2324622598199760754}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipInsert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32408,7 +32415,7 @@ GameObject:
   - component: {fileID: 2324622598389043303}
   - component: {fileID: 2324622598389043300}
   - component: {fileID: 2324622598389043298}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32650,7 +32657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622598395796802}
   - component: {fileID: 2324622598395796803}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32668,7 +32675,7 @@ GameObject:
   - component: {fileID: 2324622598411389350}
   - component: {fileID: 2324622598411389348}
   - component: {fileID: 2324622598411389351}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32798,7 +32805,7 @@ GameObject:
   - component: {fileID: 2324622598485999087}
   - component: {fileID: 2324622598485999085}
   - component: {fileID: 2324622598485999084}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Rifle_Reloader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32831,7 +32838,7 @@ GameObject:
   - component: {fileID: 2324622598552139665}
   - component: {fileID: 2324622598552139679}
   - component: {fileID: 2324622598552139678}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: ClipRelease
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32911,7 +32918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622598573527785}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MuzzlePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32941,7 +32948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622598705209063}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: MainFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32980,7 +32987,7 @@ GameObject:
   - component: {fileID: 2324622598938429825}
   - component: {fileID: 2324622598938429839}
   - component: {fileID: 2324622598938429838}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Body_FireSelector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33061,7 +33068,7 @@ GameObject:
   - component: {fileID: 2324622598941694142}
   - component: {fileID: 2324622598941694140}
   - component: {fileID: 2324622598941694143}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_Pistol_Slide_Advance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33154,7 +33161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324622598950550040}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: EjectPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33172,7 +33179,7 @@ GameObject:
   - component: {fileID: 2324622598992016582}
   - component: {fileID: 2324622598992016580}
   - component: {fileID: 2324622598992016583}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_V_Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33314,7 +33321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324622599034187239}
   - component: {fileID: 2324622599034187236}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34145,7 +34152,7 @@ GameObject:
   - component: {fileID: 2469366983157499866}
   - component: {fileID: 2469366983157499864}
   - component: {fileID: 2469366983157499867}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34281,7 +34288,7 @@ GameObject:
   - component: {fileID: 2469366983162941576}
   - component: {fileID: 2469366983162941582}
   - component: {fileID: 2469366983162941577}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34320,7 +34327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2469366983463649572}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34393,7 +34400,7 @@ GameObject:
   - component: {fileID: 2469366984412723264}
   - component: {fileID: 2469366984412723270}
   - component: {fileID: 2469366984412723265}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34419,7 +34426,7 @@ GameObject:
   - component: {fileID: 2469366984475944358}
   - component: {fileID: 2469366984475944356}
   - component: {fileID: 2469366984475944359}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34549,7 +34556,7 @@ GameObject:
   - component: {fileID: 2469366984782455325}
   - component: {fileID: 2469366984782455315}
   - component: {fileID: 2469366984782455314}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41444,7 +41451,7 @@ GameObject:
   - component: {fileID: 7539231629989610618}
   - component: {fileID: 7879264574145131503}
   - component: {fileID: 3297285659385807904}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50835,7 +50842,7 @@ GameObject:
   - component: {fileID: 6709338378890020729}
   - component: {fileID: 6891586721458173144}
   - component: {fileID: 668008427449973598}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65875,7 +65882,7 @@ GameObject:
   - component: {fileID: 6958825198666997959}
   - component: {fileID: 2052377464964508067}
   - component: {fileID: 6088992937780453823}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74789,7 +74796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6118241481377238383}
   - component: {fileID: 684180393571439265}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: GripTransform Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80635,7 +80642,7 @@ GameObject:
   - component: {fileID: 3283805398065332691}
   - component: {fileID: 2415203114253944158}
   - component: {fileID: 6361481838157132557}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BNG_Gun_RIfle_Iron_Sight_O
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82728,7 +82735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7393963856052782828}
   - component: {fileID: 7393963856052782829}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: ChamberedRifleShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89614,7 +89621,7 @@ GameObject:
   - component: {fileID: 7313084044760746795}
   - component: {fileID: 1095851455834959573}
   - component: {fileID: 5900820002334864419}
-  m_Layer: 10
+  m_Layer: 16
   m_Name: LaserEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
