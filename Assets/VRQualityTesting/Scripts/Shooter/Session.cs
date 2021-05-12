@@ -11,7 +11,8 @@ namespace VRQualityTesting.Scripts.Shooter
 {
     public class Session : ISession
     {
-        private const string WeaponHitsInformationHeader = "Distance to target, Distance to center, Lifetime, Size, Velocity, Offset, Hand side";
+        private const string WeaponHitsInformationHeader = "Distance to target, Distance to center, Lifetime, Size, Velocity, Offset, Hand side, Birth timestamp, Death timestamp";
+        private const string TimestampFormat = "HH:mm:ss:fff";
 
         public string StudyID => Settings.GetString(MainMenuKeys.StudyID);
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
@@ -84,7 +85,9 @@ namespace VRQualityTesting.Scripts.Shooter
                                                           $"{shot.TargetSize.ToString(CultureInfo.InvariantCulture)}, " +
                                                           $"{shot.TargetVelocity.ToString(CultureInfo.InvariantCulture)}, " +
                                                           $"{shot.TargetOffset.ToString(CultureInfo.InvariantCulture)}, " +
-                                                          $"{shot.HandSide}"));
+                                                          $"{shot.HandSide}, " +
+                                                          $"{shot.BirthTimestamp.ToString(TimestampFormat)}, " +
+                                                          $"{shot.DeathTimestamp.ToString(TimestampFormat)}"));
                 return detailedInformation;
             }
         }

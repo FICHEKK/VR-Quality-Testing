@@ -1,3 +1,4 @@
+using System;
 using VRQualityTesting.Scripts.Core;
 
 namespace VRQualityTesting.Scripts.Shooter
@@ -11,6 +12,8 @@ namespace VRQualityTesting.Scripts.Shooter
         public float TargetVelocity { get; }
         public float TargetOffset { get; }
         public HandSide HandSide { get; }
+        public DateTime BirthTimestamp { get; }
+        public DateTime DeathTimestamp { get; }
 
         public TargetHit(
             float distanceFromTarget,
@@ -19,7 +22,9 @@ namespace VRQualityTesting.Scripts.Shooter
             float targetSize,
             float targetVelocity,
             float targetOffset,
-            HandSide handSide)
+            HandSide handSide,
+            DateTime birthTimestamp,
+            DateTime deathTimestamp)
         {
             DistanceFromTarget = distanceFromTarget;
             DistanceFromHitToCenter = distanceFromHitToCenter;
@@ -28,6 +33,8 @@ namespace VRQualityTesting.Scripts.Shooter
             TargetVelocity = targetVelocity;
             TargetOffset = targetOffset;
             HandSide = handSide;
+            BirthTimestamp = birthTimestamp;
+            DeathTimestamp = deathTimestamp;
         }
     }
 }

@@ -37,15 +37,18 @@ namespace VRQualityTesting.Scripts.Shooter
         {
             var targetTransform = target.transform;
             var targetPosition = targetTransform.position;
+            var deathTimestamp = DateTime.Now;
 
             _targetHits.Add(new TargetHit(
                 distanceFromTarget: targetPosition.magnitude,
                 distanceFromHitToCenter: (hitPoint - targetPosition).magnitude,
-                targetLifeDurationInMs: (int) (DateTime.Now - target.BirthTimestamp).TotalMilliseconds,
+                targetLifeDurationInMs: (int) (deathTimestamp - target.BirthTimestamp).TotalMilliseconds,
                 targetSize: targetTransform.localScale.x,
                 targetVelocity: target.Velocity,
                 targetOffset: target.Offset,
-                handSide: handSide
+                handSide: handSide,
+                birthTimestamp: target.BirthTimestamp,
+                deathTimestamp: deathTimestamp
             ));
 
             targetSpawner.OnTargetHit();
