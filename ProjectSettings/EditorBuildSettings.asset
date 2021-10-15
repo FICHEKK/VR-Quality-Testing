@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VRQualityTesting/Scenes/BoxSmasher.unity
     guid: a2b237a7de5c53e47a71f6340ab0e38b
+  - enabled: 1
+    path: Assets/VRQualityTesting/Scenes/PickAndPlace.unity
+    guid: e52cc2107cfa0354b952e6064e1484cc
+  - enabled: 1
+    path: Assets/VRQualityTesting/Scenes/PickAndPlaceMenu.unity
+    guid: 54aaa0d0209d2c44a9fbfd4a0671a629
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 26d7eac96e262114e97e1fcd24104c61,
       type: 2}
