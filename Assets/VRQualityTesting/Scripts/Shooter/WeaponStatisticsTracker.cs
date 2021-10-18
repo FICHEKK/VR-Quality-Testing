@@ -10,10 +10,21 @@ namespace VRQualityTesting.Scripts.Shooter
         private const string TargetTag = "Target";
         [SerializeField] private TargetSpawner targetSpawner;
 
-        private int _totalShotsFired;
+        private int _shotsFiredWithLeftHand;
+        private int _shotsFiredWithRightHand;
         private readonly List<TargetHit> _targetHits = new List<TargetHit>();
 
-        public void HandleBulletShot() => _totalShotsFired++;
+        public void HandleBulletShot(HandSide handSide)
+        {
+            if (handSide == HandSide.Left)
+            {
+                _shotsFiredWithLeftHand++;
+            }
+            else
+            {
+                _shotsFiredWithRightHand++;
+            }
+        }
 
         public void HandleBulletHit(RaycastHit hit, HandSide handSide)
         {
@@ -54,6 +65,6 @@ namespace VRQualityTesting.Scripts.Shooter
             targetSpawner.OnTargetHit();
         }
 
-        public void PublishStatistics() => SessionPublisher.Publish(new Session(_totalShotsFired, _targetHits));
+        public void PublishStatistics() => SessionPublisher.Publish(new Session(_shotsFiredWithLeftHand, _shotsFiredWithRightHand, _targetHits));
     }
 }

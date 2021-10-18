@@ -10,12 +10,14 @@ namespace VRQualityTesting.Scripts.Shooter
 
         public void ReportShot()
         {
-            weaponStatisticsTracker.HandleBulletShot();
+            var handSide = GetComponent<WeaponHandSide>().HandSide;
+            weaponStatisticsTracker.HandleBulletShot(handSide);
         }
 
         public void ReportHit(RaycastHit hit)
         {
-            weaponStatisticsTracker.HandleBulletHit(hit, GetComponent<WeaponHandSide>().HandSide);
+            var handSide = GetComponent<WeaponHandSide>().HandSide;
+            weaponStatisticsTracker.HandleBulletHit(hit, handSide);
         }
     }
 }

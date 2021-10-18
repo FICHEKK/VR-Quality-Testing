@@ -18,12 +18,14 @@ namespace VRQualityTesting.Scripts.Shooter
         public string ParticipantID => Settings.GetString(MainMenuKeys.ParticipantID);
         public GameTitle GameTitle => GameTitle.Shooter;
 
-        private readonly int _totalShotsFired;
+        private readonly int _shotsFiredWithLeftHand;
+        private readonly int _shotsFiredWithRightHand;
         private readonly List<TargetHit> _hits;
 
-        public Session(int totalShotsFired, List<TargetHit> hits)
+        public Session(int shotsFiredWithLeftHand, int shotsFiredWithRightHand, List<TargetHit> hits)
         {
-            _totalShotsFired = totalShotsFired;
+            _shotsFiredWithLeftHand = shotsFiredWithLeftHand;
+            _shotsFiredWithRightHand = shotsFiredWithRightHand;
             _hits = hits;
         }
 
@@ -34,16 +36,30 @@ namespace VRQualityTesting.Scripts.Shooter
                 var hits = _hits.Count;
                 var hitsByRightHand = _hits.Count(hit => hit.HandSide == HandSide.Right);
                 var hitsByLeftHand = hits - hitsByRightHand;
+                var totalShotsFired = _shotsFiredWithLeftHand + _shotsFiredWithRightHand;
+
+                var totalAccuracy = totalShotsFired > 0 ? (float) hits / totalShotsFired : 0;
+                var rightHandAccuracy = _shotsFiredWithRightHand > 0 ? (float) hitsByRightHand / _shotsFiredWithRightHand : 0;
+                var leftHandAccuracy = _shotsFiredWithLeftHand > 0 ? (float) hitsByLeftHand / _shotsFiredWithLeftHand : 0;
 
                 return new List<string>
                 {
                     "# Round results",
-                    $"Total shots fired: {_totalShotsFired}",
-                    $"Hits: {hits}",
-                    $"Hits by right hand: {hitsByRightHand}",
-                    $"Hits by left hand: {hitsByLeftHand}",
-                    $"Misses: {_totalShotsFired - hits}",
-                    $"Accuracy: {((float) hits / _totalShotsFired).ToString(CultureInfo.InvariantCulture)}",
+                    $"Total shots fired: {totalShotsFired}",
+                    $"Total hits: {hits}",
+                    $"Total misses: {totalShotsFired - hits}",
+                    $"Total accuracy: {totalAccuracy.ToString(CultureInfo.InvariantCulture)}",
+                    "",
+                    $"Right hand shots fired: {_shotsFiredWithRightHand}",
+                    $"Right hand hits: {hitsByRightHand}",
+                    $"Right hand misses: {_shotsFiredWithRightHand - hitsByRightHand}",
+                    $"Right hand accuracy: {rightHandAccuracy.ToString(CultureInfo.InvariantCulture)}",
+                    "",
+                    $"Left hand shots fired: {_shotsFiredWithLeftHand}",
+                    $"Left hand hits: {hitsByLeftHand}",
+                    $"Left hand misses: {_shotsFiredWithLeftHand - hitsByLeftHand}",
+                    $"Left hand accuracy: {leftHandAccuracy.ToString(CultureInfo.InvariantCulture)}",
+                    "",
                     $"Duration: {Settings.GetFloat(ShooterKeys.RoundDuration).ToString(CultureInfo.InvariantCulture)}",
 
                     $"{Environment.NewLine}# Target spawner settings",
