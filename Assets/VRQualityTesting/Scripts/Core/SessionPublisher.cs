@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace VRQualityTesting.Scripts.Core
 {
+    /// <summary>
+    /// Component with a single job: saving the provided session information to two separate files,
+    /// one containing general session information, other detailed session information.
+    /// </summary>
     public static class SessionPublisher
     {
         private const string GeneralInformationExtension = ".txt";
